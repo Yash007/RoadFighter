@@ -18,6 +18,7 @@
 		415C2E6B202BBCDA005381D4 /* GameProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 415C2E6A202BBCDA005381D4 /* GameProtocol.swift */; };
 		415C2E6D202BBD29005381D4 /* GameObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 415C2E6C202BBD29005381D4 /* GameObject.swift */; };
 		415C2E6F202BBDA8005381D4 /* Road.swift in Sources */ = {isa = PBXBuildFile; fileRef = 415C2E6E202BBDA8005381D4 /* Road.swift */; };
+		41E0F71E202E52B2009EF684 /* Car.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41E0F71D202E52B2009EF684 /* Car.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +35,7 @@
 		415C2E6A202BBCDA005381D4 /* GameProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameProtocol.swift; sourceTree = "<group>"; };
 		415C2E6C202BBD29005381D4 /* GameObject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameObject.swift; sourceTree = "<group>"; };
 		415C2E6E202BBDA8005381D4 /* Road.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Road.swift; sourceTree = "<group>"; };
+		41E0F71D202E52B2009EF684 /* Car.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Car.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,6 +87,7 @@
 				415C2E6A202BBCDA005381D4 /* GameProtocol.swift */,
 				415C2E6C202BBD29005381D4 /* GameObject.swift */,
 				415C2E6E202BBDA8005381D4 /* Road.swift */,
+				41E0F71D202E52B2009EF684 /* Car.swift */,
 			);
 			path = Objects;
 			sourceTree = "<group>";
@@ -178,6 +181,7 @@
 				415C2E6F202BBDA8005381D4 /* Road.swift in Sources */,
 				415C2E51202BB8C0005381D4 /* AppDelegate.swift in Sources */,
 				415C2E6D202BBD29005381D4 /* GameObject.swift in Sources */,
+				41E0F71E202E52B2009EF684 /* Car.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

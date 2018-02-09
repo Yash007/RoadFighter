@@ -19,6 +19,8 @@ class GameScene: SKScene {
     
     //Game Variables
     var roadSprite : Road?
+    var carSprite: Car?
+    
     
     
     override func didMove(to view: SKView) {
@@ -29,11 +31,46 @@ class GameScene: SKScene {
         self.roadSprite = Road()
         self.addChild(roadSprite!)
         
+        //add Car
+        self.carSprite = Car()
+        self.carSprite?.position = CGPoint(x: screenWidth! * 0.5, y: 50)
+        self.addChild(carSprite!)
+        
     }
     
+    func touchDown(atPoint pos : CGPoint) {
+        self.carSprite?.TouchMove(newPos: CGPoint(x: pos.x, y: 50))
+        
+    }
+    
+    func touchMoved(toPoint pos : CGPoint) {
+        self.carSprite?.TouchMove(newPos: CGPoint(x: pos.x, y: 50))
+    }
+    
+    func touchUp(atPoint pos : CGPoint) {
+        self.carSprite?.TouchMove(newPos: CGPoint(x: pos.x, y: 50))
+    }
+    
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+        
+        for t in touches { self.touchDown(atPoint: t.location(in: self)) }
+    }
+    
+    override func touchesMoved(_ touches: Set<UITouch>, with event: UIEvent?) {
+        for t in touches { self.touchMoved(toPoint: t.location(in: self)) }
+    }
+    
+    override func touchesEnded(_ touches: Set<UITouch>, with event: UIEvent?) {
+        for t in touches { self.touchUp(atPoint: t.location(in: self)) }
+    }
+    
+    override func touchesCancelled(_ touches: Set<UITouch>, with event: UIEvent?) {
+        for t in touches { self.touchUp(atPoint: t.location(in: self)) }
+    }
     
     
     override func update(_ currentTime: TimeInterval) {
         self.roadSprite?.Update()
+        self.carSprite?.Update()
     }
 }
