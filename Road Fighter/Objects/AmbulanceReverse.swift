@@ -27,7 +27,7 @@ class AmbulanceReverse: GameObject {
     }
     
     override func Reset()    {
-        self.position.y = 700 + self.height!
+        self.position.y = 10000 + self.height!
         let randomX: Int = (randomSource?.nextInt(upperBound: Int(screenWidth! - self.width!)))! + Int(self.halfWidth!)
         self.position.x = CGFloat(randomX)
         
