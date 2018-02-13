@@ -21,7 +21,6 @@ class GameScene: SKScene {
     //Game Variables
     var roadSprite : Road?
     var carSprite: Car?
-    var ambulanceReverseSprite: AmbulanceReverse?
     var ambulanceSprite: Ambulance?
     
     override func didMove(to view: SKView) {
@@ -37,9 +36,6 @@ class GameScene: SKScene {
         self.carSprite?.position = CGPoint(x: screenWidth! * 0.5, y: 100)
         self.addChild(carSprite!)
         
-        //add Ambulance Reverse
-        self.ambulanceReverseSprite = AmbulanceReverse()
-        self.addChild(ambulanceReverseSprite!)
         
         //add Ambulance
         self.ambulanceSprite = Ambulance()
@@ -112,7 +108,6 @@ class GameScene: SKScene {
     override func update(_ currentTime: TimeInterval) {
         self.roadSprite?.Update()
         self.carSprite?.Update()
-        self.ambulanceReverseSprite?.Update()
         self.ambulanceSprite?.Update()
     }
 }
