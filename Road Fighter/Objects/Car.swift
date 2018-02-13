@@ -22,8 +22,8 @@ class Car: GameObject {
     override func CheckBounds() {
         
         //right boundry Updated
-        if self.position.x > screenSize.width - self.halfWidth! - 20  {
-            self.position.x = screenSize.width - self.halfWidth! - 20
+        if self.position.x > screenWidth! - self.halfWidth! - 20  {
+            self.position.x = screenWidth! - self.halfWidth! - 20
         }
         
         //left boundry

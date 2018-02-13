@@ -33,7 +33,6 @@ class Ambulance: GameObject {
         let randomX: UInt32 = arc4random_uniform(UInt32(toFrom)) + UInt32(startFrom)
         self.position.x = CGFloat(randomX)
         soundLock = false
-        print("\(startFrom) ---- \(toFrom)")
     }
     
     override func CheckBounds() {
