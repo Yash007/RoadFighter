@@ -8,12 +8,11 @@
 
 import SpriteKit
 import GameplayKit
-import AVFoundation
 
-class AmbulanceReverse: GameObject {
+class Ambulance: GameObject {
     init()  {
         //initialize the object with an Image
-        super.init(imageString: "ambulance-reverse", initialScale: 1.0)
+        super.init(imageString: "ambulance", initialScale: 1.0)
         Start()
     }
     
@@ -24,11 +23,11 @@ class AmbulanceReverse: GameObject {
     override func Start() {
         self.zPosition = 2
         self.Reset()
-        self.dy = 15.0
+        self.dy = 12.0
     }
     
     override func Reset()    {
-        self.position.y = 10000 + self.height!
+        self.position.y = -2000 + self.height!
         let randomX: Int = (randomSource?.nextInt(upperBound: Int(screenWidth! - self.width!)))! + Int(self.halfWidth!)
         self.position.x = CGFloat(randomX)
         
@@ -36,17 +35,13 @@ class AmbulanceReverse: GameObject {
     }
     
     override func CheckBounds() {
-        if (self.position.y < (0 - self.height!))    {
+        if (self.position.y > (667 + self.height!))    {
             self.Reset()
-        }
-        
-        if(self.position.y == 0)    {
-            self.run(SKAction.playSoundFileNamed("ambulance_siren", waitForCompletion: false))
         }
     }
     
     override func Update() {
-        self.position.y -= self.dy!
+        self.position.y += self.dy!
         self.CheckBounds()
     }
 }

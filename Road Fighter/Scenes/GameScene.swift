@@ -20,7 +20,8 @@ class GameScene: SKScene {
     //Game Variables
     var roadSprite : Road?
     var carSprite: Car?
-    var ambulanceSprite: AmbulanceReverse?
+    var ambulanceReverseSprite: AmbulanceReverse?
+    var ambulanceSprite: Ambulance?
     
     
     
@@ -34,12 +35,30 @@ class GameScene: SKScene {
         
         //add Car
         self.carSprite = Car()
-        self.carSprite?.position = CGPoint(x: screenWidth! * 0.5, y: 50)
+        self.carSprite?.position = CGPoint(x: screenWidth! * 0.5, y: 100)
         self.addChild(carSprite!)
         
+        //add Ambulance Reverse
+        self.ambulanceReverseSprite = AmbulanceReverse()
+        self.addChild(ambulanceReverseSprite!)
+        
         //add Ambulance
-        self.ambulanceSprite = AmbulanceReverse()
+        self.ambulanceSprite = Ambulance()
         self.addChild(ambulanceSprite!)
+        
+        //preload sounds
+        do {
+            let sounds:[String] = ["ambulance_siren"]
+            for sound in sounds {
+                let path: String = Bundle.main.path(forResource: sound, ofType: "mp3")!
+                let url: URL = URL(fileURLWithPath: path)
+                let player: AVAudioPlayer = try AVAudioPlayer(contentsOf: url)
+                player.prepareToPlay()
+            }
+        }
+        catch   {
+            
+        }
         
     }
     
@@ -77,6 +96,7 @@ class GameScene: SKScene {
     override func update(_ currentTime: TimeInterval) {
         self.roadSprite?.Update()
         self.carSprite?.Update()
+        self.ambulanceReverseSprite?.Update()
         self.ambulanceSprite?.Update()
     }
 }
