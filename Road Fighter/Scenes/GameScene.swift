@@ -63,16 +63,39 @@ class GameScene: SKScene {
     }
     
     func touchDown(atPoint pos : CGPoint) {
-        self.carSprite?.TouchMove(newPos: CGPoint(x: pos.x, y: 50))
+         print(pos.x - (self.carSprite?.position.x)!)
+        if (pos.x - (self.carSprite?.position.x)! >= 0 || (self.carSprite?.position.x)! - pos.x >= 0) {
+            let animateMove = SKAction.moveTo(x: pos.x, duration: 0.3)
+            self.carSprite?.run(animateMove)
+        }
+        else    {
+            self.carSprite?.TouchMove(newPos: CGPoint(x: pos.x, y: 100))
+        }
+        
+    }
+    func touchMoved(toPoint pos : CGPoint) {
+        
+//
+        print(pos.x - (self.carSprite?.position.x)!)
+        if (pos.x - (self.carSprite?.position.x)! >= 0 || (self.carSprite?.position.x)! - pos.x >= 0) {
+            let animateMove = SKAction.moveTo(x: pos.x, duration: 0.3)
+            self.carSprite?.run(animateMove)
+        }
+        else    {
+            self.carSprite?.TouchMove(newPos: CGPoint(x: pos.x, y: 100))
+        }
         
     }
     
-    func touchMoved(toPoint pos : CGPoint) {
-        self.carSprite?.TouchMove(newPos: CGPoint(x: pos.x, y: 50))
-    }
-    
     func touchUp(atPoint pos : CGPoint) {
-        self.carSprite?.TouchMove(newPos: CGPoint(x: pos.x, y: 50))
+         print(pos.x - (self.carSprite?.position.x)!)
+        if (pos.x - (self.carSprite?.position.x)! >= 0 || (self.carSprite?.position.x)! - pos.x >= 0) {
+            let animateMove = SKAction.moveTo(x: pos.x, duration: 0.3)
+            self.carSprite?.run(animateMove)
+        }
+        else    {
+            self.carSprite?.TouchMove(newPos: CGPoint(x: pos.x, y: 100))
+        }
     }
     
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
@@ -98,5 +121,9 @@ class GameScene: SKScene {
         self.carSprite?.Update()
         self.ambulanceReverseSprite?.Update()
         self.ambulanceSprite?.Update()
+        
+        let action = SKAction.moveTo(x: destX, duration: 1)
+        self.carSprite?.run(action)
     }
 }
+
