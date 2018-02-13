@@ -21,17 +21,17 @@ class Ambulance: GameObject {
     }
     
     override func Start() {
-        self.zPosition = 2
+        self.zPosition = 3
         self.Reset()
         self.dy = 12.0
     }
     
     override func Reset()    {
-        self.position.y = -2000 + self.height!
-        let randomX: Int = (randomSource?.nextInt(upperBound: Int(screenWidth! - self.width!)))! + Int(self.halfWidth!)
+        self.position.y = -1000 + self.height!
+        let startFrom: CGFloat = CGFloat((screenWidth! * 0.5) + 10.0)
+        let toFrom: CGFloat = CGFloat((screenWidth! * 0.5) - self.halfWidth! - 20.0)
+        let randomX: UInt32 = arc4random_uniform(UInt32(toFrom)) + UInt32(startFrom)
         self.position.x = CGFloat(randomX)
-        
-        
     }
     
     override func CheckBounds() {

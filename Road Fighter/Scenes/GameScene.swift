@@ -10,6 +10,7 @@ import SpriteKit
 import GameplayKit
 import UIKit
 import AVFoundation
+import CoreMotion
 
 let screenSize = UIScreen.main.bounds
 var screenWidth: CGFloat?
@@ -23,11 +24,9 @@ class GameScene: SKScene {
     var ambulanceReverseSprite: AmbulanceReverse?
     var ambulanceSprite: Ambulance?
     
-    
-    
     override func didMove(to view: SKView) {
-        screenWidth = screenSize.width
-        screenHeight = screenSize.height
+        screenWidth = frame.width
+        screenHeight = frame.height
         
         //add Ocean
         self.roadSprite = Road()
@@ -59,11 +58,9 @@ class GameScene: SKScene {
         catch   {
             
         }
-        
     }
     
     func touchDown(atPoint pos : CGPoint) {
-         print(pos.x - (self.carSprite?.position.x)!)
         if (pos.x - (self.carSprite?.position.x)! >= 0 || (self.carSprite?.position.x)! - pos.x >= 0) {
             let animateMove = SKAction.moveTo(x: pos.x, duration: 0.3)
             self.carSprite?.run(animateMove)
@@ -74,9 +71,6 @@ class GameScene: SKScene {
         
     }
     func touchMoved(toPoint pos : CGPoint) {
-        
-//
-        print(pos.x - (self.carSprite?.position.x)!)
         if (pos.x - (self.carSprite?.position.x)! >= 0 || (self.carSprite?.position.x)! - pos.x >= 0) {
             let animateMove = SKAction.moveTo(x: pos.x, duration: 0.3)
             self.carSprite?.run(animateMove)
@@ -88,7 +82,6 @@ class GameScene: SKScene {
     }
     
     func touchUp(atPoint pos : CGPoint) {
-         print(pos.x - (self.carSprite?.position.x)!)
         if (pos.x - (self.carSprite?.position.x)! >= 0 || (self.carSprite?.position.x)! - pos.x >= 0) {
             let animateMove = SKAction.moveTo(x: pos.x, duration: 0.3)
             self.carSprite?.run(animateMove)
@@ -121,9 +114,6 @@ class GameScene: SKScene {
         self.carSprite?.Update()
         self.ambulanceReverseSprite?.Update()
         self.ambulanceSprite?.Update()
-        
-        let action = SKAction.moveTo(x: destX, duration: 1)
-        self.carSprite?.run(action)
     }
 }
 

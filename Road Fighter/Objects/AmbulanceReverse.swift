@@ -28,20 +28,16 @@ class AmbulanceReverse: GameObject {
     }
     
     override func Reset()    {
-        self.position.y = 10000 + self.height!
-        let randomX: Int = (randomSource?.nextInt(upperBound: Int(screenWidth! - self.width!)))! + Int(self.halfWidth!)
-        self.position.x = CGFloat(randomX)
-        
-        
+        self.position.y = 1000 + self.height!
+        let startFrom1: CGFloat = CGFloat(self.halfWidth! + 10.0)
+        let toFrom1: CGFloat = CGFloat((screenWidth! * 0.5) - self.halfWidth! - 20.0)
+        let randomX1: UInt32 = arc4random_uniform(UInt32(toFrom1)) + UInt32(startFrom1)
+        self.position.x = CGFloat(randomX1)
     }
     
     override func CheckBounds() {
-        if (self.position.y < (0 - self.height!))    {
+        if (self.position.y < (0 - self.halfWidth!))    {
             self.Reset()
-        }
-        
-        if(self.position.y == 0)    {
-            self.run(SKAction.playSoundFileNamed("ambulance_siren", waitForCompletion: false))
         }
     }
     
