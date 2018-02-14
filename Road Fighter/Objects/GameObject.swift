@@ -27,7 +27,6 @@ class GameObject: SKSpriteNode, GameProtocol{
     var randomSource: GKARC4RandomSource?
     var randomDist: GKRandomDistribution?
     
-    var soundLock:Bool
     
     //Constructors
     
@@ -35,7 +34,6 @@ class GameObject: SKSpriteNode, GameProtocol{
         //Initialize the object with an image
         let texture = SKTexture(imageNamed: imageString)
         let color = UIColor.clear
-        self.soundLock = false
         super.init(texture: texture, color: color, size: texture.size())
         self.scale = initialScale
         self.setScale(scale!)

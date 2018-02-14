@@ -10,6 +10,8 @@ import SpriteKit
 import GameplayKit
 
 class Ambulance: GameObject {
+    
+    var soundLock: Bool = false
     init()  {
         //initialize the object with an Image
         super.init(imageString: "ambulance", initialScale: 1.0)
