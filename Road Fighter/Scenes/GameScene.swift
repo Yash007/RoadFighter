@@ -28,6 +28,8 @@ class GameScene: SKScene {
     var taxiReverseSprite: TaxiReverse?
     var viperSprite: Viper?
     var viperReverseSprite: ViperReverse?
+    var minitruckSprite: MiniTruck?
+    var minitruckReverseSprite: MiniTruckReverse?
     
     override func didMove(to view: SKView) {
         screenWidth = frame.width
@@ -71,6 +73,13 @@ class GameScene: SKScene {
         self.viperReverseSprite = ViperReverse()
         self.addChild(viperReverseSprite!)
         
+        //add Mini Truck
+        self.minitruckSprite = MiniTruck()
+        self.addChild(minitruckSprite!)
+        
+        //add Mini Truck Reverse
+        self.minitruckReverseSprite = MiniTruckReverse()
+        self.addChild(minitruckReverseSprite!)
         
         //preload sounds
         do {
@@ -146,6 +155,8 @@ class GameScene: SKScene {
         self.taxiReverseSprite?.Update()
         self.viperSprite?.Update()
         self.viperReverseSprite?.Update()
+        self.minitruckSprite?.Update()
+        self.minitruckReverseSprite?.Update();
     }
 }
 
