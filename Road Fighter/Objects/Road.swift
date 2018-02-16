@@ -22,7 +22,7 @@ class Road: GameObject {
     override func Start() {
         self.zPosition = 0
         self.anchorPoint = CGPoint.zero
-        self.dy = 12.0
+        self.dy = 20.0
     }
     
     override func Reset()    {

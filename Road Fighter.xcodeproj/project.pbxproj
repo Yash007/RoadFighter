@@ -18,6 +18,7 @@
 		415C2E6B202BBCDA005381D4 /* GameProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 415C2E6A202BBCDA005381D4 /* GameProtocol.swift */; };
 		415C2E6D202BBD29005381D4 /* GameObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 415C2E6C202BBD29005381D4 /* GameObject.swift */; };
 		415C2E6F202BBDA8005381D4 /* Road.swift in Sources */ = {isa = PBXBuildFile; fileRef = 415C2E6E202BBDA8005381D4 /* Road.swift */; };
+		4174DC1920367CBB0007F023 /* Police.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4174DC1820367CBB0007F023 /* Police.swift */; };
 		4196AD05202E632500E754FE /* Ambulance.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4196AD04202E632500E754FE /* Ambulance.swift */; };
 		4196AD07202E645800E754FE /* ambulance_siren.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 4196AD06202E645800E754FE /* ambulance_siren.mp3 */; };
 		41E0F71E202E52B2009EF684 /* Car.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41E0F71D202E52B2009EF684 /* Car.swift */; };
@@ -37,6 +38,7 @@
 		415C2E6A202BBCDA005381D4 /* GameProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameProtocol.swift; sourceTree = "<group>"; };
 		415C2E6C202BBD29005381D4 /* GameObject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameObject.swift; sourceTree = "<group>"; };
 		415C2E6E202BBDA8005381D4 /* Road.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Road.swift; sourceTree = "<group>"; };
+		4174DC1820367CBB0007F023 /* Police.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Police.swift; sourceTree = "<group>"; };
 		4196AD04202E632500E754FE /* Ambulance.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Ambulance.swift; sourceTree = "<group>"; };
 		4196AD06202E645800E754FE /* ambulance_siren.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = ambulance_siren.mp3; path = "../../../iOS Assignment 2/ambulance_siren.mp3"; sourceTree = "<group>"; };
 		41E0F71D202E52B2009EF684 /* Car.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Car.swift; sourceTree = "<group>"; };
@@ -94,6 +96,7 @@
 				415C2E6E202BBDA8005381D4 /* Road.swift */,
 				41E0F71D202E52B2009EF684 /* Car.swift */,
 				4196AD04202E632500E754FE /* Ambulance.swift */,
+				4174DC1820367CBB0007F023 /* Police.swift */,
 			);
 			path = Objects;
 			sourceTree = "<group>";
@@ -184,6 +187,7 @@
 			files = (
 				415C2E57202BB8C0005381D4 /* GameScene.swift in Sources */,
 				415C2E6B202BBCDA005381D4 /* GameProtocol.swift in Sources */,
+				4174DC1920367CBB0007F023 /* Police.swift in Sources */,
 				4196AD05202E632500E754FE /* Ambulance.swift in Sources */,
 				415C2E59202BB8C0005381D4 /* GameViewController.swift in Sources */,
 				415C2E6F202BBDA8005381D4 /* Road.swift in Sources */,

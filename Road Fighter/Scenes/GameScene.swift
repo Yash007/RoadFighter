@@ -22,6 +22,7 @@ class GameScene: SKScene {
     var roadSprite : Road?
     var carSprite: Car?
     var ambulanceSprite: Ambulance?
+    var policeSprite: Police?
     
     override func didMove(to view: SKView) {
         screenWidth = frame.width
@@ -40,6 +41,10 @@ class GameScene: SKScene {
         //add Ambulance
         self.ambulanceSprite = Ambulance()
         self.addChild(ambulanceSprite!)
+        
+        //add Police
+        self.policeSprite = Police()
+        self.addChild(policeSprite!)
         
         //preload sounds
         do {
@@ -68,7 +73,7 @@ class GameScene: SKScene {
     }
     func touchMoved(toPoint pos : CGPoint) {
         if (pos.x - (self.carSprite?.position.x)! >= 0 || (self.carSprite?.position.x)! - pos.x >= 0) {
-            let animateMove = SKAction.moveTo(x: pos.x, duration: 0.2)
+            let animateMove = SKAction.moveTo(x: pos.x, duration: 0.1)
             self.carSprite?.run(animateMove)
         }
         else    {
@@ -109,6 +114,7 @@ class GameScene: SKScene {
         self.roadSprite?.Update()
         self.carSprite?.Update()
         self.ambulanceSprite?.Update()
+        self.policeSprite?.Update()
     }
 }
 
