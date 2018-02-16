@@ -31,7 +31,7 @@ class Road: GameObject {
     }
     
     override func CheckBounds() {
-        if self.position.y < -671.5   {
+        if self.position.y < -2000   {
             self.Reset()
         }
     }

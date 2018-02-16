@@ -58,7 +58,7 @@ class GameScene: SKScene {
     
     func touchDown(atPoint pos : CGPoint) {
         if (pos.x - (self.carSprite?.position.x)! >= 0 || (self.carSprite?.position.x)! - pos.x >= 0) {
-            let animateMove = SKAction.moveTo(x: pos.x, duration: 0.3)
+            let animateMove = SKAction.moveTo(x: pos.x, duration: 0.2)
             self.carSprite?.run(animateMove)
         }
         else    {
@@ -68,7 +68,7 @@ class GameScene: SKScene {
     }
     func touchMoved(toPoint pos : CGPoint) {
         if (pos.x - (self.carSprite?.position.x)! >= 0 || (self.carSprite?.position.x)! - pos.x >= 0) {
-            let animateMove = SKAction.moveTo(x: pos.x, duration: 0.3)
+            let animateMove = SKAction.moveTo(x: pos.x, duration: 0.2)
             self.carSprite?.run(animateMove)
         }
         else    {
@@ -79,7 +79,7 @@ class GameScene: SKScene {
     
     func touchUp(atPoint pos : CGPoint) {
         if (pos.x - (self.carSprite?.position.x)! >= 0 || (self.carSprite?.position.x)! - pos.x >= 0) {
-            let animateMove = SKAction.moveTo(x: pos.x, duration: 0.3)
+            let animateMove = SKAction.moveTo(x: pos.x, duration: 0.2)
             self.carSprite?.run(animateMove)
         }
         else    {
