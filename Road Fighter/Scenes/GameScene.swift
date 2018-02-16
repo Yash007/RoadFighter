@@ -27,6 +27,7 @@ class GameScene: SKScene {
     var taxiSprite: Taxi?
     var taxiReverseSprite: TaxiReverse?
     var viperSprite: Viper?
+    var viperReverseSprite: ViperReverse?
     
     override func didMove(to view: SKView) {
         screenWidth = frame.width
@@ -62,9 +63,14 @@ class GameScene: SKScene {
         self.taxiReverseSprite = TaxiReverse()
         self.addChild(taxiReverseSprite!)
         
-        //add Viper Reverse
+        //add Viper
         self.viperSprite = Viper()
         self.addChild(viperSprite!)
+        
+        //add Viper Reverse
+        self.viperReverseSprite = ViperReverse()
+        self.addChild(viperReverseSprite!)
+        
         
         //preload sounds
         do {
@@ -139,6 +145,7 @@ class GameScene: SKScene {
         self.taxiSprite?.Update()
         self.taxiReverseSprite?.Update()
         self.viperSprite?.Update()
+        self.viperReverseSprite?.Update()
     }
 }
 
