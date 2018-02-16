@@ -24,6 +24,7 @@
 		419FD07720374BBE00914DAE /* ambulance_siren.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 419FD07620374BBE00914DAE /* ambulance_siren.mp3 */; };
 		419FD0792037553E00914DAE /* PoliceReverse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 419FD0782037553E00914DAE /* PoliceReverse.swift */; };
 		419FD07B203758A600914DAE /* Taxi.swift in Sources */ = {isa = PBXBuildFile; fileRef = 419FD07A203758A600914DAE /* Taxi.swift */; };
+		419FD07D20375B5C00914DAE /* TaxiReverse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 419FD07C20375B5C00914DAE /* TaxiReverse.swift */; };
 		41E0F71E202E52B2009EF684 /* Car.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41E0F71D202E52B2009EF684 /* Car.swift */; };
 /* End PBXBuildFile section */
 
@@ -47,6 +48,7 @@
 		419FD07620374BBE00914DAE /* ambulance_siren.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = ambulance_siren.mp3; sourceTree = "<group>"; };
 		419FD0782037553E00914DAE /* PoliceReverse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PoliceReverse.swift; sourceTree = "<group>"; };
 		419FD07A203758A600914DAE /* Taxi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Taxi.swift; sourceTree = "<group>"; };
+		419FD07C20375B5C00914DAE /* TaxiReverse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaxiReverse.swift; sourceTree = "<group>"; };
 		41E0F71D202E52B2009EF684 /* Car.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Car.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -106,6 +108,7 @@
 				4174DC1820367CBB0007F023 /* Police.swift */,
 				419FD0782037553E00914DAE /* PoliceReverse.swift */,
 				419FD07A203758A600914DAE /* Taxi.swift */,
+				419FD07C20375B5C00914DAE /* TaxiReverse.swift */,
 			);
 			path = Objects;
 			sourceTree = "<group>";
@@ -205,6 +208,7 @@
 				415C2E6F202BBDA8005381D4 /* Road.swift in Sources */,
 				415C2E51202BB8C0005381D4 /* AppDelegate.swift in Sources */,
 				415C2E6D202BBD29005381D4 /* GameObject.swift in Sources */,
+				419FD07D20375B5C00914DAE /* TaxiReverse.swift in Sources */,
 				41E0F71E202E52B2009EF684 /* Car.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
