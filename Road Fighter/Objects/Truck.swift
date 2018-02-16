@@ -1,5 +1,5 @@
 //
-//  MiniTruck.swift
+//  Truck.swift
 //  Road Fighter
 //
 //  Created by YASH SOMPURA on 2018-02-16.
@@ -9,10 +9,10 @@
 import SpriteKit
 import GameplayKit
 
-class MiniTruck: GameObject {
+class Truck: GameObject {
     init()  {
         //initialize the object with an Image
-        super.init(imageString: "mini-truck", initialScale: 1.0)
+        super.init(imageString: "truck", initialScale: 1.0)
         Start()
     }
     
@@ -27,7 +27,7 @@ class MiniTruck: GameObject {
     }
     
     override func Reset()    {
-        self.position.y = 2400 + self.height!
+        self.position.y = 3200 + self.height!
         let startFrom: CGFloat = CGFloat((screenWidth! * 0.5) + 10)
         let toFrom: CGFloat = CGFloat(screenWidth! - self.halfWidth! - 20.0)
         let randomX: UInt32 = arc4random_uniform(UInt32(toFrom - startFrom)) + UInt32(startFrom)
