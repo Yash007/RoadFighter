@@ -23,6 +23,7 @@ class GameScene: SKScene {
     var carSprite: Car?
     var ambulanceSprite: Ambulance?
     var policeSprite: Police?
+    var policeReverseSprite: PoliceReverse?
     
     override func didMove(to view: SKView) {
         screenWidth = frame.width
@@ -45,6 +46,10 @@ class GameScene: SKScene {
         //add Police
         self.policeSprite = Police()
         self.addChild(policeSprite!)
+        
+        //add Police Reverse
+        self.policeReverseSprite = PoliceReverse()
+        self.addChild(policeReverseSprite!)
         
         //preload sounds
         do {
@@ -115,6 +120,7 @@ class GameScene: SKScene {
         self.carSprite?.Update()
         self.ambulanceSprite?.Update()
         self.policeSprite?.Update()
+        self.policeReverseSprite?.Update()
     }
 }
 

@@ -1,20 +1,19 @@
 //
-//  Police.swift
+//  PoliceReverse.swift
 //  Road Fighter
 //
-//  Created by YASH SOMPURA on 2018-02-15.
+//  Created by YASH SOMPURA on 2018-02-16.
 //  Copyright © 2018 YASH SOMPURA. All rights reserved.
 //
 
 import SpriteKit
 import GameplayKit
 
-class Police: GameObject {
-    
+class PoliceReverse: GameObject {
     var soundLock: Bool = false
     init()  {
         //initialize the object with an Image
-        super.init(imageString: "Police", initialScale: 1.0)
+        super.init(imageString: "police-reverse", initialScale: 1.0)
         Start()
     }
     
@@ -25,17 +24,16 @@ class Police: GameObject {
     override func Start() {
         self.zPosition = 3
         self.Reset()
-        self.dy = 2.8
+        self.dy = 7
     }
     
     override func Reset()    {
-        self.position.y = 1000 + self.height!
-        let startFrom: CGFloat = CGFloat((screenWidth! * 0.5) + 10)
-        let toFrom: CGFloat = CGFloat(screenWidth! - self.halfWidth! - 20.0)
+        self.position.y = 1500 + self.height!
+        let startFrom: CGFloat = CGFloat(self.halfWidth! + 20.0)
+        let toFrom: CGFloat = CGFloat((screenWidth! * 0.5) - self.halfWidth! - 10.0)
         let randomX: UInt32 = arc4random_uniform(UInt32(toFrom - startFrom)) + UInt32(startFrom)
         self.position.x = CGFloat(randomX)
         soundLock = false
-        
     }
     
     override func CheckBounds() {
@@ -55,4 +53,3 @@ class Police: GameObject {
         self.CheckBounds()
     }
 }
-
