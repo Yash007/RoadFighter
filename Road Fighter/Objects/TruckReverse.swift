@@ -1,5 +1,5 @@
 //
-//  MiniTruckReverse.swift
+//  TruckReverse.swift
 //  Road Fighter
 //
 //  Created by YASH SOMPURA on 2018-02-16.
@@ -9,10 +9,10 @@
 import SpriteKit
 import GameplayKit
 
-class MiniTruckReverse: GameObject {
+class TruckReverse: GameObject {
     init()  {
         //initialize the object with an Image
-        super.init(imageString: "mini-truck-reverse", initialScale: 1.0)
+        super.init(imageString: "truck-reverse", initialScale: 1.0)
         Start()
     }
     
@@ -27,7 +27,7 @@ class MiniTruckReverse: GameObject {
     }
     
     override func Reset()    {
-        self.position.y = 3000 + self.height!
+        self.position.y = 3200 + self.height!
         let startFrom: CGFloat = CGFloat(self.halfWidth! + 20.0)
         let toFrom: CGFloat = CGFloat((screenWidth! * 0.5) - self.halfWidth! - 10.0)
         let randomX: UInt32 = arc4random_uniform(UInt32(toFrom - startFrom)) + UInt32(startFrom)

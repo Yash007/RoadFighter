@@ -30,6 +30,7 @@
 		41B160F32037751300E9D647 /* MiniTruck.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41B160F22037751300E9D647 /* MiniTruck.swift */; };
 		41B160F52037766200E9D647 /* MiniTruckReverse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41B160F42037766200E9D647 /* MiniTruckReverse.swift */; };
 		41B160F72037772C00E9D647 /* Truck.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41B160F62037772C00E9D647 /* Truck.swift */; };
+		41B160F92037791F00E9D647 /* TruckReverse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41B160F82037791F00E9D647 /* TruckReverse.swift */; };
 		41E0F71E202E52B2009EF684 /* Car.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41E0F71D202E52B2009EF684 /* Car.swift */; };
 /* End PBXBuildFile section */
 
@@ -59,6 +60,7 @@
 		41B160F22037751300E9D647 /* MiniTruck.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MiniTruck.swift; sourceTree = "<group>"; };
 		41B160F42037766200E9D647 /* MiniTruckReverse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MiniTruckReverse.swift; sourceTree = "<group>"; };
 		41B160F62037772C00E9D647 /* Truck.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Truck.swift; sourceTree = "<group>"; };
+		41B160F82037791F00E9D647 /* TruckReverse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TruckReverse.swift; sourceTree = "<group>"; };
 		41E0F71D202E52B2009EF684 /* Car.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Car.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -124,6 +126,7 @@
 				41B160F22037751300E9D647 /* MiniTruck.swift */,
 				41B160F42037766200E9D647 /* MiniTruckReverse.swift */,
 				41B160F62037772C00E9D647 /* Truck.swift */,
+				41B160F82037791F00E9D647 /* TruckReverse.swift */,
 			);
 			path = Objects;
 			sourceTree = "<group>";
@@ -217,6 +220,7 @@
 				415C2E57202BB8C0005381D4 /* GameScene.swift in Sources */,
 				419FD07F20375CB000914DAE /* Viper.swift in Sources */,
 				41B160F52037766200E9D647 /* MiniTruckReverse.swift in Sources */,
+				41B160F92037791F00E9D647 /* TruckReverse.swift in Sources */,
 				415C2E6B202BBCDA005381D4 /* GameProtocol.swift in Sources */,
 				4174DC1920367CBB0007F023 /* Police.swift in Sources */,
 				4196AD05202E632500E754FE /* Ambulance.swift in Sources */,

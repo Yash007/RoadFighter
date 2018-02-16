@@ -31,6 +31,7 @@ class GameScene: SKScene {
     var minitruckSprite: MiniTruck?
     var minitruckReverseSprite: MiniTruckReverse?
     var truckSprite: Truck?
+    var truckReverseSprite: TruckReverse?
     
     override func didMove(to view: SKView) {
         screenWidth = frame.width
@@ -85,6 +86,10 @@ class GameScene: SKScene {
         //add Truck
         self.truckSprite = Truck()
         self.addChild(truckSprite!)
+        
+        //add Truck Reverse
+        self.truckReverseSprite = TruckReverse()
+        self.addChild(truckReverseSprite!)
         
         //preload sounds
         do {
@@ -163,6 +168,7 @@ class GameScene: SKScene {
         self.minitruckSprite?.Update()
         self.minitruckReverseSprite?.Update()
         self.truckSprite?.Update()
+        self.truckReverseSprite?.Update()
     }
 }
 
