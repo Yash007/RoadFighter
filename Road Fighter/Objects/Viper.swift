@@ -1,5 +1,5 @@
 //
-//  TaxiReverse.swift
+//  Viper.swift
 //  Road Fighter
 //
 //  Created by YASH SOMPURA on 2018-02-16.
@@ -8,12 +8,10 @@
 
 import SpriteKit
 import GameplayKit
-
-class TaxiReverse: GameObject {
-    var soundLock: Bool = false
+class Viper: GameObject {
     init()  {
         //initialize the object with an Image
-        super.init(imageString: "taxi-reverse", initialScale: 1.0)
+        super.init(imageString: "viper", initialScale: 1.0)
         Start()
     }
     
@@ -24,22 +22,23 @@ class TaxiReverse: GameObject {
     override func Start() {
         self.zPosition = 3
         self.Reset()
-        self.dy = 7
+        self.dy = 1
     }
     
     override func Reset()    {
-        self.position.y = screenHeight! + self.height!
-        let startFrom: CGFloat = CGFloat(self.halfWidth! + 20.0)
-        let toFrom: CGFloat = CGFloat((screenWidth! * 0.5) - self.halfWidth! - 10.0)
+        self.position.y = 2200 + self.height!
+        let startFrom: CGFloat = CGFloat((screenWidth! * 0.5) + 10)
+        let toFrom: CGFloat = CGFloat(screenWidth! - self.halfWidth! - 20.0)
         let randomX: UInt32 = arc4random_uniform(UInt32(toFrom - startFrom)) + UInt32(startFrom)
         self.position.x = CGFloat(randomX)
-        soundLock = false
+        
     }
     
     override func CheckBounds() {
         if (self.position.y < (0 - self.halfHeight!))    {
             self.Reset()
         }
+        
     }
     
     override func Update() {
