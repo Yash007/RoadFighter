@@ -18,6 +18,8 @@
 		415C2E6B202BBCDA005381D4 /* GameProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 415C2E6A202BBCDA005381D4 /* GameProtocol.swift */; };
 		415C2E6D202BBD29005381D4 /* GameObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 415C2E6C202BBD29005381D4 /* GameObject.swift */; };
 		415C2E6F202BBDA8005381D4 /* Road.swift in Sources */ = {isa = PBXBuildFile; fileRef = 415C2E6E202BBDA8005381D4 /* Road.swift */; };
+		41721442203BEFCE00584F1A /* Sedan.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41721441203BEFCE00584F1A /* Sedan.swift */; };
+		41721444203BEFDF00584F1A /* MiniVan.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41721443203BEFDF00584F1A /* MiniVan.swift */; };
 		4174DC1920367CBB0007F023 /* Police.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4174DC1820367CBB0007F023 /* Police.swift */; };
 		4196AD05202E632500E754FE /* Ambulance.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4196AD04202E632500E754FE /* Ambulance.swift */; };
 		419FD07520374B7700914DAE /* police_siren.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 419FD07420374B7700914DAE /* police_siren.mp3 */; };
@@ -43,6 +45,8 @@
 		415C2E6A202BBCDA005381D4 /* GameProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameProtocol.swift; sourceTree = "<group>"; };
 		415C2E6C202BBD29005381D4 /* GameObject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameObject.swift; sourceTree = "<group>"; };
 		415C2E6E202BBDA8005381D4 /* Road.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Road.swift; sourceTree = "<group>"; };
+		41721441203BEFCE00584F1A /* Sedan.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sedan.swift; sourceTree = "<group>"; };
+		41721443203BEFDF00584F1A /* MiniVan.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MiniVan.swift; sourceTree = "<group>"; };
 		4174DC1820367CBB0007F023 /* Police.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Police.swift; sourceTree = "<group>"; };
 		4196AD04202E632500E754FE /* Ambulance.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Ambulance.swift; sourceTree = "<group>"; };
 		419FD07420374B7700914DAE /* police_siren.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = police_siren.mp3; sourceTree = "<group>"; };
@@ -112,6 +116,8 @@
 				419FD07E20375CB000914DAE /* Viper.swift */,
 				41B160F22037751300E9D647 /* MiniTruck.swift */,
 				41B160F62037772C00E9D647 /* Truck.swift */,
+				41721441203BEFCE00584F1A /* Sedan.swift */,
+				41721443203BEFDF00584F1A /* MiniVan.swift */,
 			);
 			path = Objects;
 			sourceTree = "<group>";
@@ -202,10 +208,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				419FD07B203758A600914DAE /* Taxi.swift in Sources */,
+				41721444203BEFDF00584F1A /* MiniVan.swift in Sources */,
 				415C2E57202BB8C0005381D4 /* GameScene.swift in Sources */,
 				419FD07F20375CB000914DAE /* Viper.swift in Sources */,
 				415C2E6B202BBCDA005381D4 /* GameProtocol.swift in Sources */,
 				4174DC1920367CBB0007F023 /* Police.swift in Sources */,
+				41721442203BEFCE00584F1A /* Sedan.swift in Sources */,
 				4196AD05202E632500E754FE /* Ambulance.swift in Sources */,
 				41B160F72037772C00E9D647 /* Truck.swift in Sources */,
 				415C2E59202BB8C0005381D4 /* GameViewController.swift in Sources */,
