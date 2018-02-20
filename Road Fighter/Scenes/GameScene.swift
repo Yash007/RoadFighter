@@ -23,15 +23,10 @@ class GameScene: SKScene {
     var carSprite: Car?
     var ambulanceSprite: Ambulance?
     var policeSprite: Police?
-    var policeReverseSprite: PoliceReverse?
     var taxiSprite: Taxi?
-    var taxiReverseSprite: TaxiReverse?
     var viperSprite: Viper?
-    var viperReverseSprite: ViperReverse?
     var minitruckSprite: MiniTruck?
-    var minitruckReverseSprite: MiniTruckReverse?
     var truckSprite: Truck?
-    var truckReverseSprite: TruckReverse?
     
     override func didMove(to view: SKView) {
         screenWidth = frame.width
@@ -55,41 +50,21 @@ class GameScene: SKScene {
         self.policeSprite = Police()
         self.addChild(policeSprite!)
         
-        //add Police Reverse
-        self.policeReverseSprite = PoliceReverse()
-        self.addChild(policeReverseSprite!)
-        
         //add Taxi
         self.taxiSprite = Taxi()
         self.addChild(taxiSprite!)
-        
-        //add Taxi Reverse
-        self.taxiReverseSprite = TaxiReverse()
-        self.addChild(taxiReverseSprite!)
         
         //add Viper
         self.viperSprite = Viper()
         self.addChild(viperSprite!)
         
-        //add Viper Reverse
-        self.viperReverseSprite = ViperReverse()
-        self.addChild(viperReverseSprite!)
-        
         //add Mini Truck
         self.minitruckSprite = MiniTruck()
         self.addChild(minitruckSprite!)
         
-        //add Mini Truck Reverse
-        self.minitruckReverseSprite = MiniTruckReverse()
-        self.addChild(minitruckReverseSprite!)
-        
         //add Truck
         self.truckSprite = Truck()
         self.addChild(truckSprite!)
-        
-        //add Truck Reverse
-        self.truckReverseSprite = TruckReverse()
-        self.addChild(truckReverseSprite!)
         
         //preload sounds
         do {
@@ -118,7 +93,7 @@ class GameScene: SKScene {
     }
     func touchMoved(toPoint pos : CGPoint) {
         if (pos.x - (self.carSprite?.position.x)! >= 0 || (self.carSprite?.position.x)! - pos.x >= 0) {
-            let animateMove = SKAction.moveTo(x: pos.x, duration: 0.1)
+            let animateMove = SKAction.moveTo(x: pos.x, duration: 0)
             self.carSprite?.run(animateMove)
         }
         else    {
@@ -160,15 +135,10 @@ class GameScene: SKScene {
         self.carSprite?.Update()
         self.ambulanceSprite?.Update()
         self.policeSprite?.Update()
-        self.policeReverseSprite?.Update()
         self.taxiSprite?.Update()
-        self.taxiReverseSprite?.Update()
         self.viperSprite?.Update()
-        self.viperReverseSprite?.Update()
         self.minitruckSprite?.Update()
-        self.minitruckReverseSprite?.Update()
         self.truckSprite?.Update()
-        self.truckReverseSprite?.Update()
     }
 }
 
