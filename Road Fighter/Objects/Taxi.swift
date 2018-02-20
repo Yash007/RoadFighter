@@ -29,7 +29,7 @@ class Taxi: GameObject {
     
     override func Reset()    {
         self.position.y = screenHeight! + self.height!
-        let startFrom: CGFloat = CGFloat((screenWidth! * 0.5) + 10)
+        let startFrom: CGFloat = CGFloat(self.halfWidth! + 20.0)
         let toFrom: CGFloat = CGFloat(screenWidth! - self.halfWidth! - 20.0)
         let randomX: UInt32 = arc4random_uniform(UInt32(toFrom - startFrom)) + UInt32(startFrom)
         self.position.x = CGFloat(randomX)
