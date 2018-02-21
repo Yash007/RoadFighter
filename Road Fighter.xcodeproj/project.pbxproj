@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		412D340A203E0EA400C9696F /* Arcade.TTF in Resources */ = {isa = PBXBuildFile; fileRef = 412D3409203E0EA400C9696F /* Arcade.TTF */; };
+		412D340A203E0EA400C9696F /* ArcadeClassic.TTF in Resources */ = {isa = PBXBuildFile; fileRef = 412D3409203E0EA400C9696F /* ArcadeClassic.TTF */; };
 		412D340C203E0F4F00C9696F /* GameStartScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = 412D340B203E0F4F00C9696F /* GameStartScene.sks */; };
 		412D340E203E0FB200C9696F /* GameStartScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 412D340D203E0FB200C9696F /* GameStartScene.swift */; };
 		415C2E51202BB8C0005381D4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 415C2E50202BB8C0005381D4 /* AppDelegate.swift */; };
@@ -35,7 +35,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		412D3409203E0EA400C9696F /* Arcade.TTF */ = {isa = PBXFileReference; lastKnownFileType = file; path = Arcade.TTF; sourceTree = "<group>"; };
+		412D3409203E0EA400C9696F /* ArcadeClassic.TTF */ = {isa = PBXFileReference; lastKnownFileType = file; path = ArcadeClassic.TTF; sourceTree = "<group>"; };
 		412D340B203E0F4F00C9696F /* GameStartScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = GameStartScene.sks; sourceTree = "<group>"; };
 		412D340D203E0FB200C9696F /* GameStartScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameStartScene.swift; sourceTree = "<group>"; };
 		415C2E4D202BB8C0005381D4 /* Road Fighter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Road Fighter.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -78,7 +78,7 @@
 		412D3408203E0E7900C9696F /* Fonts */ = {
 			isa = PBXGroup;
 			children = (
-				412D3409203E0EA400C9696F /* Arcade.TTF */,
+				412D3409203E0EA400C9696F /* ArcadeClassic.TTF */,
 			);
 			path = Fonts;
 			sourceTree = "<group>";
@@ -215,7 +215,7 @@
 				419FD07520374B7700914DAE /* police_siren.mp3 in Resources */,
 				415C2E61202BB8C0005381D4 /* LaunchScreen.storyboard in Resources */,
 				415C2E55202BB8C0005381D4 /* Actions.sks in Resources */,
-				412D340A203E0EA400C9696F /* Arcade.TTF in Resources */,
+				412D340A203E0EA400C9696F /* ArcadeClassic.TTF in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
