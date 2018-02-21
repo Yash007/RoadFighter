@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		412D340A203E0EA400C9696F /* Arcade.TTF in Resources */ = {isa = PBXBuildFile; fileRef = 412D3409203E0EA400C9696F /* Arcade.TTF */; };
+		412D340C203E0F4F00C9696F /* GameStartScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = 412D340B203E0F4F00C9696F /* GameStartScene.sks */; };
+		412D340E203E0FB200C9696F /* GameStartScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 412D340D203E0FB200C9696F /* GameStartScene.swift */; };
 		415C2E51202BB8C0005381D4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 415C2E50202BB8C0005381D4 /* AppDelegate.swift */; };
 		415C2E53202BB8C0005381D4 /* GameScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = 415C2E52202BB8C0005381D4 /* GameScene.sks */; };
 		415C2E55202BB8C0005381D4 /* Actions.sks in Resources */ = {isa = PBXBuildFile; fileRef = 415C2E54202BB8C0005381D4 /* Actions.sks */; };
@@ -32,6 +35,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		412D3409203E0EA400C9696F /* Arcade.TTF */ = {isa = PBXFileReference; lastKnownFileType = file; path = Arcade.TTF; sourceTree = "<group>"; };
+		412D340B203E0F4F00C9696F /* GameStartScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = GameStartScene.sks; sourceTree = "<group>"; };
+		412D340D203E0FB200C9696F /* GameStartScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameStartScene.swift; sourceTree = "<group>"; };
 		415C2E4D202BB8C0005381D4 /* Road Fighter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Road Fighter.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		415C2E50202BB8C0005381D4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		415C2E52202BB8C0005381D4 /* GameScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = GameScene.sks; sourceTree = "<group>"; };
@@ -69,6 +75,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		412D3408203E0E7900C9696F /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				412D3409203E0EA400C9696F /* Arcade.TTF */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
 		415C2E44202BB8C0005381D4 = {
 			isa = PBXGroup;
 			children = (
@@ -88,6 +102,7 @@
 		415C2E4F202BB8C0005381D4 /* Road Fighter */ = {
 			isa = PBXGroup;
 			children = (
+				412D3408203E0E7900C9696F /* Fonts */,
 				415C2E69202BBC7F005381D4 /* Scenes */,
 				415C2E68202BBC47005381D4 /* Objects */,
 				415C2E50202BB8C0005381D4 /* AppDelegate.swift */,
@@ -127,6 +142,8 @@
 			children = (
 				415C2E52202BB8C0005381D4 /* GameScene.sks */,
 				415C2E56202BB8C0005381D4 /* GameScene.swift */,
+				412D340B203E0F4F00C9696F /* GameStartScene.sks */,
+				412D340D203E0FB200C9696F /* GameStartScene.swift */,
 			);
 			path = Scenes;
 			sourceTree = "<group>";
@@ -191,12 +208,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				419FD07720374BBE00914DAE /* ambulance_siren.mp3 in Resources */,
+				412D340C203E0F4F00C9696F /* GameStartScene.sks in Resources */,
 				415C2E5C202BB8C0005381D4 /* Main.storyboard in Resources */,
 				415C2E53202BB8C0005381D4 /* GameScene.sks in Resources */,
 				415C2E5E202BB8C0005381D4 /* Assets.xcassets in Resources */,
 				419FD07520374B7700914DAE /* police_siren.mp3 in Resources */,
 				415C2E61202BB8C0005381D4 /* LaunchScreen.storyboard in Resources */,
 				415C2E55202BB8C0005381D4 /* Actions.sks in Resources */,
+				412D340A203E0EA400C9696F /* Arcade.TTF in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -212,6 +231,7 @@
 				415C2E57202BB8C0005381D4 /* GameScene.swift in Sources */,
 				419FD07F20375CB000914DAE /* Viper.swift in Sources */,
 				415C2E6B202BBCDA005381D4 /* GameProtocol.swift in Sources */,
+				412D340E203E0FB200C9696F /* GameStartScene.swift in Sources */,
 				4174DC1920367CBB0007F023 /* Police.swift in Sources */,
 				41721442203BEFCE00584F1A /* Sedan.swift in Sources */,
 				4196AD05202E632500E754FE /* Ambulance.swift in Sources */,

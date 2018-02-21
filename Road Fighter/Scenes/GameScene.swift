@@ -27,6 +27,8 @@ class GameScene: SKScene {
     var viperSprite: Viper?
     var minitruckSprite: MiniTruck?
     var truckSprite: Truck?
+    var miniVanSprite: MiniVan?
+    var sedanSprite: Sedan?
     
     override func didMove(to view: SKView) {
         screenWidth = frame.width
@@ -66,6 +68,14 @@ class GameScene: SKScene {
         self.truckSprite = Truck()
         self.addChild(truckSprite!)
         
+        //add Mini Van
+        self.miniVanSprite = MiniVan()
+        self.addChild(miniVanSprite!)
+        
+        //add Sedan
+        self.sedanSprite = Sedan()
+        self.addChild(sedanSprite!)
+    
         //preload sounds
         do {
             let sounds:[String] = ["ambulance_siren"]
@@ -139,6 +149,8 @@ class GameScene: SKScene {
         self.viperSprite?.Update()
         self.minitruckSprite?.Update()
         self.truckSprite?.Update()
+        self.miniVanSprite?.Update()
+        self.sedanSprite?.Update()
     }
 }
 
