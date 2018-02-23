@@ -18,13 +18,14 @@
 		4147CEDB20408CB00093E131 /* GameOverScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4147CEDA20408CB00093E131 /* GameOverScene.swift */; };
 		4147CEDE20408D470093E131 /* Collisionmanager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4147CEDD20408D470093E131 /* Collisionmanager.swift */; };
 		4147CEE020408D7D0093E131 /* Scoremanager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4147CEDF20408D7D0093E131 /* Scoremanager.swift */; };
+		4147CEE320408F0A0093E131 /* Explosion.sks in Resources */ = {isa = PBXBuildFile; fileRef = 4147CEE120408F0A0093E131 /* Explosion.sks */; };
+		4147CEE420408F0A0093E131 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4147CEE220408F0A0093E131 /* Assets.xcassets */; };
 		415C2E51202BB8C0005381D4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 415C2E50202BB8C0005381D4 /* AppDelegate.swift */; };
 		415C2E53202BB8C0005381D4 /* GameScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = 415C2E52202BB8C0005381D4 /* GameScene.sks */; };
 		415C2E55202BB8C0005381D4 /* Actions.sks in Resources */ = {isa = PBXBuildFile; fileRef = 415C2E54202BB8C0005381D4 /* Actions.sks */; };
 		415C2E57202BB8C0005381D4 /* GameScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 415C2E56202BB8C0005381D4 /* GameScene.swift */; };
 		415C2E59202BB8C0005381D4 /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 415C2E58202BB8C0005381D4 /* GameViewController.swift */; };
 		415C2E5C202BB8C0005381D4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 415C2E5A202BB8C0005381D4 /* Main.storyboard */; };
-		415C2E5E202BB8C0005381D4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 415C2E5D202BB8C0005381D4 /* Assets.xcassets */; };
 		415C2E61202BB8C0005381D4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 415C2E5F202BB8C0005381D4 /* LaunchScreen.storyboard */; };
 		415C2E6B202BBCDA005381D4 /* GameProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 415C2E6A202BBCDA005381D4 /* GameProtocol.swift */; };
 		415C2E6D202BBD29005381D4 /* GameObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 415C2E6C202BBD29005381D4 /* GameObject.swift */; };
@@ -54,6 +55,8 @@
 		4147CEDA20408CB00093E131 /* GameOverScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameOverScene.swift; sourceTree = "<group>"; };
 		4147CEDD20408D470093E131 /* Collisionmanager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Collisionmanager.swift; sourceTree = "<group>"; };
 		4147CEDF20408D7D0093E131 /* Scoremanager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Scoremanager.swift; sourceTree = "<group>"; };
+		4147CEE120408F0A0093E131 /* Explosion.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = Explosion.sks; sourceTree = "<group>"; };
+		4147CEE220408F0A0093E131 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		415C2E4D202BB8C0005381D4 /* Road Fighter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Road Fighter.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		415C2E50202BB8C0005381D4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		415C2E52202BB8C0005381D4 /* GameScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = GameScene.sks; sourceTree = "<group>"; };
@@ -61,7 +64,6 @@
 		415C2E56202BB8C0005381D4 /* GameScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameScene.swift; sourceTree = "<group>"; };
 		415C2E58202BB8C0005381D4 /* GameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
 		415C2E5B202BB8C0005381D4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		415C2E5D202BB8C0005381D4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		415C2E60202BB8C0005381D4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		415C2E62202BB8C0005381D4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		415C2E6A202BBCDA005381D4 /* GameProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameProtocol.swift; sourceTree = "<group>"; };
@@ -137,9 +139,10 @@
 				415C2E5A202BB8C0005381D4 /* Main.storyboard */,
 				419FD07420374B7700914DAE /* police_siren.mp3 */,
 				419FD07620374BBE00914DAE /* ambulance_siren.mp3 */,
-				415C2E5D202BB8C0005381D4 /* Assets.xcassets */,
 				415C2E5F202BB8C0005381D4 /* LaunchScreen.storyboard */,
 				415C2E62202BB8C0005381D4 /* Info.plist */,
+				4147CEE120408F0A0093E131 /* Explosion.sks */,
+				4147CEE220408F0A0093E131 /* Assets.xcassets */,
 			);
 			path = "Road Fighter";
 			sourceTree = "<group>";
@@ -243,12 +246,13 @@
 				412D340C203E0F4F00C9696F /* GameStartScene.sks in Resources */,
 				415C2E5C202BB8C0005381D4 /* Main.storyboard in Resources */,
 				415C2E53202BB8C0005381D4 /* GameScene.sks in Resources */,
-				415C2E5E202BB8C0005381D4 /* Assets.xcassets in Resources */,
 				4147CED520408B220093E131 /* GameTutorial.sks in Resources */,
+				4147CEE320408F0A0093E131 /* Explosion.sks in Resources */,
 				419FD07520374B7700914DAE /* police_siren.mp3 in Resources */,
 				415C2E61202BB8C0005381D4 /* LaunchScreen.storyboard in Resources */,
 				415C2E55202BB8C0005381D4 /* Actions.sks in Resources */,
 				4147CED920408C5F0093E131 /* GameOverScene.sks in Resources */,
+				4147CEE420408F0A0093E131 /* Assets.xcassets in Resources */,
 				412D340A203E0EA400C9696F /* ArcadeClassic.TTF in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
