@@ -92,7 +92,7 @@ class GameScene: SKScene {
         
         //preload sounds
         do {
-            let sounds:[String] = ["ambulance_siren","Explosion","Collision"]
+            let sounds:[String] = ["ambulance_siren","Explosion","Collision","Points"]
             for sound in sounds {
                 let path: String = Bundle.main.path(forResource: sound, ofType: "mp3")!
                 let url: URL = URL(fileURLWithPath: path)

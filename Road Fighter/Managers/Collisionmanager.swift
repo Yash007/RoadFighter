@@ -35,7 +35,8 @@ class Collisionmanager: SKScene, SKPhysicsContactDelegate {
                     object1.addChild(particle)
                     object2.isHidden = true
                     ScoreManager.Score += 100
-                    scene.run(SKAction.playSoundFileNamed("Explosion", waitForCompletion: false))
+                    scene.run(SKAction.playSoundFileNamed("Explosion", waitForCompletion: true))
+                    scene.run(SKAction.playSoundFileNamed("Points", waitForCompletion: false))
                 }
                 
                 if(object2.name == "viper" || object2.name == "truck" || object2.name == "car" || object2.name == "mini_van" || object2.name == "mini-truck" || object2.name == "taxi") {
