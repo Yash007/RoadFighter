@@ -31,10 +31,10 @@ class Collisionmanager: SKScene, SKPhysicsContactDelegate {
                 if(object2.name == "Police") {
                     
                     
-                    let animateMove = SKAction.moveTo(x: 200, duration: 0.1)
+                    let animateMove = SKAction.moveTo(x: object1.position.x, duration: 0.1)
                     object1.run(animateMove)
                     let particle = SKEmitterNode(fileNamed: "Explosion.sks")!
-                    particle.position.x = object2.position.x - (screenWidth!*0.5)
+                    particle.position.x = 0;
                     //particle.particlePosition.x = object2.position.x
                     object1.addChild(particle)
                     object2.isHidden = true
@@ -64,7 +64,6 @@ class Collisionmanager: SKScene, SKPhysicsContactDelegate {
                     let animateMove2 = SKAction.moveTo(x: setpos2, duration: 0.1)
                     object1.run(animateMove)
                     object2.run(animateMove2)
-                    print(object1.position)
                     ScoreManager.Lives -= 1
                     
                 }
