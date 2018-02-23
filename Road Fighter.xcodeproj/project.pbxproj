@@ -93,14 +93,6 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		412D3408203E0E7900C9696F /* Fonts */ = {
-			isa = PBXGroup;
-			children = (
-				412D3409203E0EA400C9696F /* ArcadeClassic.TTF */,
-			);
-			path = Fonts;
-			sourceTree = "<group>";
-		};
 		4147CEDC20408D060093E131 /* Managers */ = {
 			isa = PBXGroup;
 			children = (
@@ -130,11 +122,11 @@
 			isa = PBXGroup;
 			children = (
 				4147CEDC20408D060093E131 /* Managers */,
-				412D3408203E0E7900C9696F /* Fonts */,
 				415C2E69202BBC7F005381D4 /* Scenes */,
 				415C2E68202BBC47005381D4 /* Objects */,
 				415C2E50202BB8C0005381D4 /* AppDelegate.swift */,
 				415C2E54202BB8C0005381D4 /* Actions.sks */,
+				412D3409203E0EA400C9696F /* ArcadeClassic.TTF */,
 				415C2E58202BB8C0005381D4 /* GameViewController.swift */,
 				415C2E5A202BB8C0005381D4 /* Main.storyboard */,
 				419FD07420374B7700914DAE /* police_siren.mp3 */,

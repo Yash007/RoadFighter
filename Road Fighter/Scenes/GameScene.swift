@@ -15,6 +15,8 @@ import CoreMotion
 let screenSize = UIScreen.main.bounds
 var screenWidth: CGFloat?
 var screenHeight: CGFloat?
+var livesLabel: Label?
+var scoreLabel: Label?
 
 class GameScene: SKScene {
     
@@ -27,7 +29,6 @@ class GameScene: SKScene {
     var viperSprite: Viper?
     var minitruckSprite: MiniTruck?
     var truckSprite: Truck?
-    var miniVanSprite: MiniVan?
     var sedanSprite: Sedan?
     
     override func didMove(to view: SKView) {
@@ -52,30 +53,38 @@ class GameScene: SKScene {
         self.policeSprite = Police()
         self.addChild(policeSprite!)
         
+        
         //add Taxi
         self.taxiSprite = Taxi()
         self.addChild(taxiSprite!)
+        
         
         //add Viper
         self.viperSprite = Viper()
         self.addChild(viperSprite!)
         
+        
         //add Mini Truck
         self.minitruckSprite = MiniTruck()
         self.addChild(minitruckSprite!)
+        
         
         //add Truck
         self.truckSprite = Truck()
         self.addChild(truckSprite!)
         
-        //add Mini Van
-        self.miniVanSprite = MiniVan()
-        self.addChild(miniVanSprite!)
-        
         //add Sedan
         self.sedanSprite = Sedan()
         self.addChild(sedanSprite!)
-    
+        
+        // add lives label
+        livesLabel = Label(labelString: "Lives: 3", position: CGPoint(x: 20.0, y: frame.height - 20.0), fontSize: 35.0, fontName: "ArcadeClassic", fontColor: SKColor.yellow, isCentered: false)
+        self.addChild(livesLabel!)
+        
+        // add score label
+        scoreLabel = Label(labelString: "Score: 99999", position: CGPoint(x: frame.width * 0.45, y: frame.height - 20.0), fontSize: 35.0, fontName: "ArcadeClassic", fontColor: SKColor.yellow, isCentered: false)
+        self.addChild(scoreLabel!)
+        
         //preload sounds
         do {
             let sounds:[String] = ["ambulance_siren"]
@@ -103,7 +112,7 @@ class GameScene: SKScene {
     }
     func touchMoved(toPoint pos : CGPoint) {
         if (pos.x - (self.carSprite?.position.x)! >= 0 || (self.carSprite?.position.x)! - pos.x >= 0) {
-            let animateMove = SKAction.moveTo(x: pos.x, duration: 0)
+            let animateMove = SKAction.moveTo(x: pos.x, duration: 0.1)
             self.carSprite?.run(animateMove)
         }
         else    {
@@ -149,8 +158,26 @@ class GameScene: SKScene {
         self.viperSprite?.Update()
         self.minitruckSprite?.Update()
         self.truckSprite?.Update()
-        self.miniVanSprite?.Update()
-        self.sedanSprite?.Update()
+        Collisionmanager.CheckCollison(scene: self, object1: carSprite!, object2: policeSprite!)
+        Collisionmanager.CheckCollison(scene: self, object1: carSprite!, object2: truckSprite!)
+        Collisionmanager.CheckCollison(scene: self, object1: carSprite!, object2: minitruckSprite!)
+        Collisionmanager.CheckCollison(scene: self, object1: carSprite!, object2: taxiSprite!)
+        Collisionmanager.CheckCollison(scene: self, object1: carSprite!, object2: viperSprite!)
+        
+        
+        if(ScoreManager.Lives > 0) {
+            livesLabel?.text = "Lives: \(ScoreManager.Lives)"
+            scoreLabel?.text = "Score: \(ScoreManager.Score)"
+        }
+        else {
+            if let view = self.view {
+                if let scene = SKScene(fileNamed: "GameOverScene") {
+                    scene.scaleMode = .aspectFit
+                    view.presentScene(scene)
+                }
+            }
+        }
+        
     }
 }
 
