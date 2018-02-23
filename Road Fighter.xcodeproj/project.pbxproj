@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		41129A21203FE28D0099C5C6 /* Label.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41129A20203FE28D0099C5C6 /* Label.swift */; };
+		41129A23203FE2FE0099C5C6 /* Distance.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41129A22203FE2FE0099C5C6 /* Distance.swift */; };
 		412D340A203E0EA400C9696F /* ArcadeClassic.TTF in Resources */ = {isa = PBXBuildFile; fileRef = 412D3409203E0EA400C9696F /* ArcadeClassic.TTF */; };
 		412D340C203E0F4F00C9696F /* GameStartScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = 412D340B203E0F4F00C9696F /* GameStartScene.sks */; };
 		412D340E203E0FB200C9696F /* GameStartScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 412D340D203E0FB200C9696F /* GameStartScene.swift */; };
@@ -37,6 +38,7 @@
 
 /* Begin PBXFileReference section */
 		41129A20203FE28D0099C5C6 /* Label.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Label.swift; sourceTree = "<group>"; };
+		41129A22203FE2FE0099C5C6 /* Distance.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Distance.swift; sourceTree = "<group>"; };
 		412D3409203E0EA400C9696F /* ArcadeClassic.TTF */ = {isa = PBXFileReference; lastKnownFileType = file; path = ArcadeClassic.TTF; sourceTree = "<group>"; };
 		412D340B203E0F4F00C9696F /* GameStartScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = GameStartScene.sks; sourceTree = "<group>"; };
 		412D340D203E0FB200C9696F /* GameStartScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameStartScene.swift; sourceTree = "<group>"; };
@@ -136,6 +138,7 @@
 				41721441203BEFCE00584F1A /* Sedan.swift */,
 				41721443203BEFDF00584F1A /* MiniVan.swift */,
 				41129A20203FE28D0099C5C6 /* Label.swift */,
+				41129A22203FE2FE0099C5C6 /* Distance.swift */,
 			);
 			path = Objects;
 			sourceTree = "<group>";
@@ -229,6 +232,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				41129A23203FE2FE0099C5C6 /* Distance.swift in Sources */,
 				419FD07B203758A600914DAE /* Taxi.swift in Sources */,
 				41721444203BEFDF00584F1A /* MiniVan.swift in Sources */,
 				415C2E57202BB8C0005381D4 /* GameScene.swift in Sources */,
