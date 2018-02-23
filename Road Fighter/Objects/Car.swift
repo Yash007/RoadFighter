@@ -44,3 +44,4 @@ class Car: GameObject {
         self.position = newPos
     }
 }
+
