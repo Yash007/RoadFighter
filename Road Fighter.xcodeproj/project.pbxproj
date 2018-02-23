@@ -12,6 +12,8 @@
 		412D340A203E0EA400C9696F /* ArcadeClassic.TTF in Resources */ = {isa = PBXBuildFile; fileRef = 412D3409203E0EA400C9696F /* ArcadeClassic.TTF */; };
 		412D340C203E0F4F00C9696F /* GameStartScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = 412D340B203E0F4F00C9696F /* GameStartScene.sks */; };
 		412D340E203E0FB200C9696F /* GameStartScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 412D340D203E0FB200C9696F /* GameStartScene.swift */; };
+		4147CED520408B220093E131 /* GameTutorial.sks in Resources */ = {isa = PBXBuildFile; fileRef = 4147CED420408B220093E131 /* GameTutorial.sks */; };
+		4147CED720408B9A0093E131 /* GameTutorial.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4147CED620408B9A0093E131 /* GameTutorial.swift */; };
 		415C2E51202BB8C0005381D4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 415C2E50202BB8C0005381D4 /* AppDelegate.swift */; };
 		415C2E53202BB8C0005381D4 /* GameScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = 415C2E52202BB8C0005381D4 /* GameScene.sks */; };
 		415C2E55202BB8C0005381D4 /* Actions.sks in Resources */ = {isa = PBXBuildFile; fileRef = 415C2E54202BB8C0005381D4 /* Actions.sks */; };
@@ -42,6 +44,8 @@
 		412D3409203E0EA400C9696F /* ArcadeClassic.TTF */ = {isa = PBXFileReference; lastKnownFileType = file; path = ArcadeClassic.TTF; sourceTree = "<group>"; };
 		412D340B203E0F4F00C9696F /* GameStartScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = GameStartScene.sks; sourceTree = "<group>"; };
 		412D340D203E0FB200C9696F /* GameStartScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameStartScene.swift; sourceTree = "<group>"; };
+		4147CED420408B220093E131 /* GameTutorial.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = GameTutorial.sks; sourceTree = "<group>"; };
+		4147CED620408B9A0093E131 /* GameTutorial.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameTutorial.swift; sourceTree = "<group>"; };
 		415C2E4D202BB8C0005381D4 /* Road Fighter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Road Fighter.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		415C2E50202BB8C0005381D4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		415C2E52202BB8C0005381D4 /* GameScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = GameScene.sks; sourceTree = "<group>"; };
@@ -150,6 +154,8 @@
 				415C2E56202BB8C0005381D4 /* GameScene.swift */,
 				412D340B203E0F4F00C9696F /* GameStartScene.sks */,
 				412D340D203E0FB200C9696F /* GameStartScene.swift */,
+				4147CED420408B220093E131 /* GameTutorial.sks */,
+				4147CED620408B9A0093E131 /* GameTutorial.swift */,
 			);
 			path = Scenes;
 			sourceTree = "<group>";
@@ -218,6 +224,7 @@
 				415C2E5C202BB8C0005381D4 /* Main.storyboard in Resources */,
 				415C2E53202BB8C0005381D4 /* GameScene.sks in Resources */,
 				415C2E5E202BB8C0005381D4 /* Assets.xcassets in Resources */,
+				4147CED520408B220093E131 /* GameTutorial.sks in Resources */,
 				419FD07520374B7700914DAE /* police_siren.mp3 in Resources */,
 				415C2E61202BB8C0005381D4 /* LaunchScreen.storyboard in Resources */,
 				415C2E55202BB8C0005381D4 /* Actions.sks in Resources */,
@@ -239,6 +246,7 @@
 				419FD07F20375CB000914DAE /* Viper.swift in Sources */,
 				415C2E6B202BBCDA005381D4 /* GameProtocol.swift in Sources */,
 				412D340E203E0FB200C9696F /* GameStartScene.swift in Sources */,
+				4147CED720408B9A0093E131 /* GameTutorial.swift in Sources */,
 				4174DC1920367CBB0007F023 /* Police.swift in Sources */,
 				41721442203BEFCE00584F1A /* Sedan.swift in Sources */,
 				4196AD05202E632500E754FE /* Ambulance.swift in Sources */,
