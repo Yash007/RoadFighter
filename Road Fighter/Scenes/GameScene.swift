@@ -30,7 +30,6 @@ class GameScene: SKScene {
     var minitruckSprite: MiniTruck?
     var truckSprite: Truck?
     var sedanSprite: Sedan?
-    
     override func didMove(to view: SKView) {
         screenWidth = frame.width
         screenHeight = frame.height
@@ -85,9 +84,15 @@ class GameScene: SKScene {
         scoreLabel = Label(labelString: "Score: 99999", position: CGPoint(x: frame.width * 0.45, y: frame.height - 20.0), fontSize: 35.0, fontName: "ArcadeClassic", fontColor: SKColor.yellow, isCentered: false)
         self.addChild(scoreLabel!)
         
+        // play background engine sound
+        let engineSound = SKAudioNode(fileNamed: "CarSound")
+        self.addChild(engineSound)
+        engineSound.autoplayLooped = true
+        
+        
         //preload sounds
         do {
-            let sounds:[String] = ["ambulance_siren"]
+            let sounds:[String] = ["ambulance_siren","Explosion","Collision"]
             for sound in sounds {
                 let path: String = Bundle.main.path(forResource: sound, ofType: "mp3")!
                 let url: URL = URL(fileURLWithPath: path)

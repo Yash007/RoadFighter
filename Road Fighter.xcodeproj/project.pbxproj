@@ -12,8 +12,9 @@
 		412D340A203E0EA400C9696F /* ArcadeClassic.TTF in Resources */ = {isa = PBXBuildFile; fileRef = 412D3409203E0EA400C9696F /* ArcadeClassic.TTF */; };
 		412D340C203E0F4F00C9696F /* GameStartScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = 412D340B203E0F4F00C9696F /* GameStartScene.sks */; };
 		412D340E203E0FB200C9696F /* GameStartScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 412D340D203E0FB200C9696F /* GameStartScene.swift */; };
-		41303CC52040B3BF00F4CEC1 /* TruckSound.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 41303CC42040B3BF00F4CEC1 /* TruckSound.mp3 */; };
 		41303CC72040B3CA00F4CEC1 /* CarSound.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 41303CC62040B3CA00F4CEC1 /* CarSound.mp3 */; };
+		41303CC92040BD5100F4CEC1 /* Explosion.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 41303CC82040BD5100F4CEC1 /* Explosion.mp3 */; };
+		41303CCB2040BFA500F4CEC1 /* Collision.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 41303CCA2040BFA500F4CEC1 /* Collision.mp3 */; };
 		4147CED520408B220093E131 /* GameTutorial.sks in Resources */ = {isa = PBXBuildFile; fileRef = 4147CED420408B220093E131 /* GameTutorial.sks */; };
 		4147CED720408B9A0093E131 /* GameTutorial.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4147CED620408B9A0093E131 /* GameTutorial.swift */; };
 		4147CED920408C5F0093E131 /* GameOverScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = 4147CED820408C5F0093E131 /* GameOverScene.sks */; };
@@ -36,7 +37,6 @@
 		41721444203BEFDF00584F1A /* MiniVan.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41721443203BEFDF00584F1A /* MiniVan.swift */; };
 		4174DC1920367CBB0007F023 /* Police.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4174DC1820367CBB0007F023 /* Police.swift */; };
 		4196AD05202E632500E754FE /* Ambulance.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4196AD04202E632500E754FE /* Ambulance.swift */; };
-		419FD07520374B7700914DAE /* police_siren.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 419FD07420374B7700914DAE /* police_siren.mp3 */; };
 		419FD07720374BBE00914DAE /* ambulance_siren.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 419FD07620374BBE00914DAE /* ambulance_siren.mp3 */; };
 		419FD07B203758A600914DAE /* Taxi.swift in Sources */ = {isa = PBXBuildFile; fileRef = 419FD07A203758A600914DAE /* Taxi.swift */; };
 		419FD07F20375CB000914DAE /* Viper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 419FD07E20375CB000914DAE /* Viper.swift */; };
@@ -51,8 +51,9 @@
 		412D3409203E0EA400C9696F /* ArcadeClassic.TTF */ = {isa = PBXFileReference; lastKnownFileType = file; path = ArcadeClassic.TTF; sourceTree = "<group>"; };
 		412D340B203E0F4F00C9696F /* GameStartScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = GameStartScene.sks; sourceTree = "<group>"; };
 		412D340D203E0FB200C9696F /* GameStartScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameStartScene.swift; sourceTree = "<group>"; };
-		41303CC42040B3BF00F4CEC1 /* TruckSound.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = TruckSound.mp3; sourceTree = "<group>"; };
 		41303CC62040B3CA00F4CEC1 /* CarSound.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = CarSound.mp3; sourceTree = "<group>"; };
+		41303CC82040BD5100F4CEC1 /* Explosion.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Explosion.mp3; sourceTree = "<group>"; };
+		41303CCA2040BFA500F4CEC1 /* Collision.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Collision.mp3; sourceTree = "<group>"; };
 		4147CED420408B220093E131 /* GameTutorial.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = GameTutorial.sks; sourceTree = "<group>"; };
 		4147CED620408B9A0093E131 /* GameTutorial.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameTutorial.swift; sourceTree = "<group>"; };
 		4147CED820408C5F0093E131 /* GameOverScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = GameOverScene.sks; sourceTree = "<group>"; };
@@ -77,7 +78,6 @@
 		41721443203BEFDF00584F1A /* MiniVan.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MiniVan.swift; sourceTree = "<group>"; };
 		4174DC1820367CBB0007F023 /* Police.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Police.swift; sourceTree = "<group>"; };
 		4196AD04202E632500E754FE /* Ambulance.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Ambulance.swift; sourceTree = "<group>"; };
-		419FD07420374B7700914DAE /* police_siren.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = police_siren.mp3; sourceTree = "<group>"; };
 		419FD07620374BBE00914DAE /* ambulance_siren.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = ambulance_siren.mp3; sourceTree = "<group>"; };
 		419FD07A203758A600914DAE /* Taxi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Taxi.swift; sourceTree = "<group>"; };
 		419FD07E20375CB000914DAE /* Viper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Viper.swift; sourceTree = "<group>"; };
@@ -133,10 +133,10 @@
 				412D3409203E0EA400C9696F /* ArcadeClassic.TTF */,
 				415C2E58202BB8C0005381D4 /* GameViewController.swift */,
 				415C2E5A202BB8C0005381D4 /* Main.storyboard */,
-				419FD07420374B7700914DAE /* police_siren.mp3 */,
 				419FD07620374BBE00914DAE /* ambulance_siren.mp3 */,
-				41303CC42040B3BF00F4CEC1 /* TruckSound.mp3 */,
 				41303CC62040B3CA00F4CEC1 /* CarSound.mp3 */,
+				41303CC82040BD5100F4CEC1 /* Explosion.mp3 */,
+				41303CCA2040BFA500F4CEC1 /* Collision.mp3 */,
 				415C2E5F202BB8C0005381D4 /* LaunchScreen.storyboard */,
 				415C2E62202BB8C0005381D4 /* Info.plist */,
 				4147CEE120408F0A0093E131 /* Explosion.sks */,
@@ -247,10 +247,10 @@
 				415C2E53202BB8C0005381D4 /* GameScene.sks in Resources */,
 				4147CED520408B220093E131 /* GameTutorial.sks in Resources */,
 				4147CEE320408F0A0093E131 /* Explosion.sks in Resources */,
-				419FD07520374B7700914DAE /* police_siren.mp3 in Resources */,
+				41303CCB2040BFA500F4CEC1 /* Collision.mp3 in Resources */,
+				41303CC92040BD5100F4CEC1 /* Explosion.mp3 in Resources */,
 				415C2E61202BB8C0005381D4 /* LaunchScreen.storyboard in Resources */,
 				415C2E55202BB8C0005381D4 /* Actions.sks in Resources */,
-				41303CC52040B3BF00F4CEC1 /* TruckSound.mp3 in Resources */,
 				4147CED920408C5F0093E131 /* GameOverScene.sks in Resources */,
 				4147CEE420408F0A0093E131 /* Assets.xcassets in Resources */,
 				412D340A203E0EA400C9696F /* ArcadeClassic.TTF in Resources */,

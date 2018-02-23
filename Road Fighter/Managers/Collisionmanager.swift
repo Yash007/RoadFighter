@@ -26,6 +26,7 @@ class Collisionmanager: SKScene, SKPhysicsContactDelegate {
             
             if(!object2.isColliding!) {
                 if(object2.name == "Police") {
+                    
                     let animateMove = SKAction.moveTo(x: object1.position.x, duration: 0.1)
                     object1.run(animateMove)
                     let particle = SKEmitterNode(fileNamed: "Explosion.sks")!
@@ -34,10 +35,11 @@ class Collisionmanager: SKScene, SKPhysicsContactDelegate {
                     object1.addChild(particle)
                     object2.isHidden = true
                     ScoreManager.Score += 100
-                    
+                    scene.run(SKAction.playSoundFileNamed("Explosion", waitForCompletion: false))
                 }
                 
                 if(object2.name == "viper" || object2.name == "truck" || object2.name == "car" || object2.name == "mini_van" || object2.name == "mini-truck" || object2.name == "taxi") {
+                    
                     
                     var setpos: CGFloat = 0
                     var newpos: CGFloat = 0
@@ -60,7 +62,7 @@ class Collisionmanager: SKScene, SKPhysicsContactDelegate {
                     object1.run(animateMove)
                     object2.run(animateMove2)
                     ScoreManager.Lives -= 1
-                    
+                    scene.run(SKAction.playSoundFileNamed("Collision", waitForCompletion: false))
                 }
                 
                 if(object2.name == "ambulance") {

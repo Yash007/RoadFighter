@@ -11,7 +11,6 @@ import GameplayKit
 
 class Police: GameObject {
     
-    var soundLock: Bool = false
     init()  {
         //initialize the object with an Image
         super.init(imageString: "Police", initialScale: 1.0)
@@ -36,19 +35,12 @@ class Police: GameObject {
         let toFrom: CGFloat = CGFloat(screenWidth! - 20.0)
         let randomX: UInt32 = arc4random_uniform(UInt32(toFrom - startFrom)) + UInt32(startFrom)
         self.position.x = CGFloat(randomX)
-        soundLock = false
         
     }
     
     override func CheckBounds() {
         if (self.position.y < (0 - self.halfHeight!))    {
             self.Reset()
-        }
-        if(self.position.y > 0 && self.position.y < (667 + self.height!))   {
-            if(soundLock == false)  {
-                soundLock = true
-                scene?.run(SKAction.playSoundFileNamed("police_siren", waitForCompletion: false))
-            }
         }
     }
     
