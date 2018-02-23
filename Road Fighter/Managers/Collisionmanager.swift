@@ -18,10 +18,7 @@ class Collisionmanager: SKScene, SKPhysicsContactDelegate {
     required init?(coder aDecoder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
-    
-    
-    
-    
+
     public static func CheckCollison(scene: SKScene, object1: GameObject, object2: GameObject) {
         
         
@@ -29,8 +26,6 @@ class Collisionmanager: SKScene, SKPhysicsContactDelegate {
             
             if(!object2.isColliding!) {
                 if(object2.name == "Police") {
-                    
-                    
                     let animateMove = SKAction.moveTo(x: object1.position.x, duration: 0.1)
                     object1.run(animateMove)
                     let particle = SKEmitterNode(fileNamed: "Explosion.sks")!
@@ -66,6 +61,10 @@ class Collisionmanager: SKScene, SKPhysicsContactDelegate {
                     object2.run(animateMove2)
                     ScoreManager.Lives -= 1
                     
+                }
+                
+                if(object2.name == "ambulance") {
+                    ScoreManager.Lives = 0
                 }
                 
                 object2.isColliding = true

@@ -163,6 +163,7 @@ class GameScene: SKScene {
         Collisionmanager.CheckCollison(scene: self, object1: carSprite!, object2: minitruckSprite!)
         Collisionmanager.CheckCollison(scene: self, object1: carSprite!, object2: taxiSprite!)
         Collisionmanager.CheckCollison(scene: self, object1: carSprite!, object2: viperSprite!)
+        Collisionmanager.CheckCollison(scene: self, object1: carSprite!, object2: ambulanceSprite!)
         
         
         if(ScoreManager.Lives > 0) {
