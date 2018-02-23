@@ -16,6 +16,8 @@
 		4147CED720408B9A0093E131 /* GameTutorial.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4147CED620408B9A0093E131 /* GameTutorial.swift */; };
 		4147CED920408C5F0093E131 /* GameOverScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = 4147CED820408C5F0093E131 /* GameOverScene.sks */; };
 		4147CEDB20408CB00093E131 /* GameOverScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4147CEDA20408CB00093E131 /* GameOverScene.swift */; };
+		4147CEDE20408D470093E131 /* Collisionmanager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4147CEDD20408D470093E131 /* Collisionmanager.swift */; };
+		4147CEE020408D7D0093E131 /* Scoremanager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4147CEDF20408D7D0093E131 /* Scoremanager.swift */; };
 		415C2E51202BB8C0005381D4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 415C2E50202BB8C0005381D4 /* AppDelegate.swift */; };
 		415C2E53202BB8C0005381D4 /* GameScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = 415C2E52202BB8C0005381D4 /* GameScene.sks */; };
 		415C2E55202BB8C0005381D4 /* Actions.sks in Resources */ = {isa = PBXBuildFile; fileRef = 415C2E54202BB8C0005381D4 /* Actions.sks */; };
@@ -50,6 +52,8 @@
 		4147CED620408B9A0093E131 /* GameTutorial.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameTutorial.swift; sourceTree = "<group>"; };
 		4147CED820408C5F0093E131 /* GameOverScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = GameOverScene.sks; sourceTree = "<group>"; };
 		4147CEDA20408CB00093E131 /* GameOverScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameOverScene.swift; sourceTree = "<group>"; };
+		4147CEDD20408D470093E131 /* Collisionmanager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Collisionmanager.swift; sourceTree = "<group>"; };
+		4147CEDF20408D7D0093E131 /* Scoremanager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Scoremanager.swift; sourceTree = "<group>"; };
 		415C2E4D202BB8C0005381D4 /* Road Fighter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Road Fighter.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		415C2E50202BB8C0005381D4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		415C2E52202BB8C0005381D4 /* GameScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = GameScene.sks; sourceTree = "<group>"; };
@@ -95,6 +99,15 @@
 			path = Fonts;
 			sourceTree = "<group>";
 		};
+		4147CEDC20408D060093E131 /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+				4147CEDD20408D470093E131 /* Collisionmanager.swift */,
+				4147CEDF20408D7D0093E131 /* Scoremanager.swift */,
+			);
+			path = Managers;
+			sourceTree = "<group>";
+		};
 		415C2E44202BB8C0005381D4 = {
 			isa = PBXGroup;
 			children = (
@@ -114,6 +127,7 @@
 		415C2E4F202BB8C0005381D4 /* Road Fighter */ = {
 			isa = PBXGroup;
 			children = (
+				4147CEDC20408D060093E131 /* Managers */,
 				412D3408203E0E7900C9696F /* Fonts */,
 				415C2E69202BBC7F005381D4 /* Scenes */,
 				415C2E68202BBC47005381D4 /* Objects */,
@@ -252,11 +266,13 @@
 				415C2E57202BB8C0005381D4 /* GameScene.swift in Sources */,
 				419FD07F20375CB000914DAE /* Viper.swift in Sources */,
 				415C2E6B202BBCDA005381D4 /* GameProtocol.swift in Sources */,
+				4147CEE020408D7D0093E131 /* Scoremanager.swift in Sources */,
 				412D340E203E0FB200C9696F /* GameStartScene.swift in Sources */,
 				4147CED720408B9A0093E131 /* GameTutorial.swift in Sources */,
 				4174DC1920367CBB0007F023 /* Police.swift in Sources */,
 				41721442203BEFCE00584F1A /* Sedan.swift in Sources */,
 				4147CEDB20408CB00093E131 /* GameOverScene.swift in Sources */,
+				4147CEDE20408D470093E131 /* Collisionmanager.swift in Sources */,
 				4196AD05202E632500E754FE /* Ambulance.swift in Sources */,
 				41B160F72037772C00E9D647 /* Truck.swift in Sources */,
 				415C2E59202BB8C0005381D4 /* GameViewController.swift in Sources */,
