@@ -11,7 +11,7 @@ import SpriteKit
 class Road: GameObject {
     init()  {
         //initialize the object with an Image
-        super.init(imageString: "final-road", initialScale: 1.0)
+        super.init(imageString: "final-road-1", initialScale: 1.0)
         Start()
     }
     
@@ -31,7 +31,7 @@ class Road: GameObject {
     }
     
     override func CheckBounds() {
-        if self.position.y < -2000   {
+        if self.position.y < -670   {
             self.Reset()
         }
     }
@@ -41,3 +41,4 @@ class Road: GameObject {
         self.CheckBounds()
     }
 }
+
