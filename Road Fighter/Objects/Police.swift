@@ -29,8 +29,10 @@ class Police: GameObject {
     }
     
     override func Reset()    {
+        self.isHidden = false
+        
         self.position.y = 1000 + self.height!
-        let startFrom: CGFloat = CGFloat(self.halfWidth! + 20.0)
+        let startFrom: CGFloat = CGFloat((screenWidth! * 0.5) + 10)
         let toFrom: CGFloat = CGFloat(screenWidth! - self.halfWidth! - 20.0)
         let randomX: UInt32 = arc4random_uniform(UInt32(toFrom - startFrom)) + UInt32(startFrom)
         self.position.x = CGFloat(randomX)
@@ -55,4 +57,3 @@ class Police: GameObject {
         self.CheckBounds()
     }
 }
-

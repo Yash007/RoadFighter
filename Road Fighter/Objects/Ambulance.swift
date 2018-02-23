@@ -54,3 +54,4 @@ class Ambulance: GameObject {
         self.CheckBounds()
     }
 }
+
