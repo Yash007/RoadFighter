@@ -13,34 +13,26 @@ class Label: SKLabelNode {
          fontName:String,
          fontColor: SKColor,
          isCentered:Bool) {
-        super.init()
+            super.init()
         
-        self.text = labelString
+            self.text = labelString
         
-        self.fontSize = fontSize
-        self.fontName = fontName
-        self.fontColor = fontColor
+            self.fontSize = fontSize
+            self.fontName = fontName
+            self.fontColor = fontColor
         
-        if(isCentered) {
-            self.position = position
-        }
-        else {
-            self.position.x = position.x + self.frame.width * 0.5
-            self.position.y = position.y - self.frame.height * 0.5
-        }
-        
-        self.zPosition = 10
-        
-        
+            if(isCentered) {
+                self.position = position
+            }
+            else {
+                self.position.x = position.x + self.frame.width * 0.5
+                self.position.y = position.y - self.frame.height * 0.5
+            }
+            self.zPosition = 10
     }
-    
     required init?(coder aDecoder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
-    
-    // Private Methods
-    
-    // Public Methods
 }
 
 
