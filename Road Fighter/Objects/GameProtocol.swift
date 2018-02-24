@@ -1,12 +1,14 @@
-//
-//  GameProtocol.swift
-//  Road Fighter
-//
-//  Created by YASH SOMPURA on 2018-02-07.
-//  Copyright © 2018 YASH SOMPURA. All rights reserved.
-//
+// File Name: GameProtocol.swift
+// Project Name: Road Fighter
+// Advanced iOS Development - Assignment 2
+// Developed By: Yashkumar Sompura (300967186)
+//               Kshitij Suthar (300971837)
+//               Shivam Shah (300877523)
+//               Harsh Mehta (300951815)
+// Github Link: https://github.com/Yash007/RoadFighter
 
 protocol GameProtocol {
+    
     func Reset()
     
     func CheckBounds()

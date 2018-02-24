@@ -1,10 +1,11 @@
-//
-//  GameViewController.swift
-//  Road Fighter
-//
-//  Created by YASH SOMPURA on 2018-02-07.
-//  Copyright © 2018 YASH SOMPURA. All rights reserved.
-//
+// File Name: GameViewController.swift
+// Project Name: Road Fighter
+// Advanced iOS Development - Assignment 2
+// Developed By: Yashkumar Sompura (300967186)
+//               Kshitij Suthar (300971837)
+//               Shivam Shah (300877523)
+//               Harsh Mehta (300951815)
+// Github Link: https://github.com/Yash007/RoadFighter
 
 import UIKit
 import SpriteKit
@@ -16,19 +17,14 @@ class GameViewController: UIViewController {
         super.viewDidLoad()
         
         if let view = self.view as! SKView? {
-            // Load the SKScene from 'GameScene.sks'
             if let scene = SKScene(fileNamed: "GameStartScene") {
-                // Set the scale mode to scale to fit the window
                 scene.scaleMode = .aspectFit
-                
-                // Present the scene
                 view.presentScene(scene)
             }
             
             view.ignoresSiblingOrder = true
-            
-            view.showsFPS = true
-            view.showsNodeCount = true
+            view.showsFPS = false
+            view.showsNodeCount = false
         }
     }
     
@@ -46,12 +42,9 @@ class GameViewController: UIViewController {
     
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
-        // Release any cached data, images, etc that aren't in use.
     }
     
     override var prefersStatusBarHidden: Bool {
         return true
     }
-    
-    
 }

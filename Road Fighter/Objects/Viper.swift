@@ -1,14 +1,16 @@
-//
-//  Viper.swift
-//  Road Fighter
-//
-//  Created by YASH SOMPURA on 2018-02-16.
-//  Copyright © 2018 YASH SOMPURA. All rights reserved.
-//
+// File Name: Viper.swift
+// Project Name: Road Fighter
+// Advanced iOS Development - Assignment 2
+// Developed By: Yashkumar Sompura (300967186)
+//               Kshitij Suthar (300971837)
+//               Shivam Shah (300877523)
+//               Harsh Mehta (300951815)
+// Github Link: https://github.com/Yash007/RoadFighter
 
 import SpriteKit
 import GameplayKit
 class Viper: GameObject {
+    
     init()  {
         //initialize the object with an Image
         super.init(imageString: "viper", initialScale: 1.0)

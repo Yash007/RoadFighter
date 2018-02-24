@@ -1,10 +1,11 @@
-//
-//  GameScene.swift
-//  Road Fighter
-//
-//  Created by YASH SOMPURA on 2018-02-07.
-//  Copyright © 2018 YASH SOMPURA. All rights reserved.
-//
+// File Name: GameScene.swift
+// Project Name: Road Fighter
+// Advanced iOS Development - Assignment 2
+// Developed By: Yashkumar Sompura (300967186)
+//               Kshitij Suthar (300971837)
+//               Shivam Shah (300877523)
+//               Harsh Mehta (300951815)
+// Github Link: https://github.com/Yash007/RoadFighter
 
 import SpriteKit
 import GameplayKit
@@ -43,7 +44,6 @@ class GameScene: SKScene {
         self.carSprite?.position = CGPoint(x: screenWidth! * 0.5, y: 100)
         self.addChild(carSprite!)
         
-        
         //add Ambulance
         self.ambulanceSprite = Ambulance()
         self.addChild(ambulanceSprite!)
@@ -52,21 +52,17 @@ class GameScene: SKScene {
         self.policeSprite = Police()
         self.addChild(policeSprite!)
         
-        
         //add Taxi
         self.taxiSprite = Taxi()
         self.addChild(taxiSprite!)
-        
         
         //add Viper
         self.viperSprite = Viper()
         self.addChild(viperSprite!)
         
-        
         //add Mini Truck
         self.minitruckSprite = MiniTruck()
         self.addChild(minitruckSprite!)
-        
         
         //add Truck
         self.truckSprite = Truck()
@@ -88,7 +84,6 @@ class GameScene: SKScene {
         let engineSound = SKAudioNode(fileNamed: "CarSound")
         self.addChild(engineSound)
         engineSound.autoplayLooped = true
-        
         
         //preload sounds
         do {
@@ -115,6 +110,7 @@ class GameScene: SKScene {
         }
         
     }
+    
     func touchMoved(toPoint pos : CGPoint) {
         if (pos.x - (self.carSprite?.position.x)! >= 0 || (self.carSprite?.position.x)! - pos.x >= 0) {
             let animateMove = SKAction.moveTo(x: pos.x, duration: 0.1)
@@ -153,7 +149,6 @@ class GameScene: SKScene {
         for t in touches { self.touchUp(atPoint: t.location(in: self)) }
     }
     
-    
     override func update(_ currentTime: TimeInterval) {
         self.roadSprite?.Update()
         self.carSprite?.Update()
@@ -163,13 +158,13 @@ class GameScene: SKScene {
         self.viperSprite?.Update()
         self.minitruckSprite?.Update()
         self.truckSprite?.Update()
+        
         Collisionmanager.CheckCollison(scene: self, object1: carSprite!, object2: policeSprite!)
         Collisionmanager.CheckCollison(scene: self, object1: carSprite!, object2: truckSprite!)
         Collisionmanager.CheckCollison(scene: self, object1: carSprite!, object2: minitruckSprite!)
         Collisionmanager.CheckCollison(scene: self, object1: carSprite!, object2: taxiSprite!)
         Collisionmanager.CheckCollison(scene: self, object1: carSprite!, object2: viperSprite!)
         Collisionmanager.CheckCollison(scene: self, object1: carSprite!, object2: ambulanceSprite!)
-        
         
         if(ScoreManager.Lives > 0) {
             livesLabel?.text = "Lives: \(ScoreManager.Lives)"
@@ -183,7 +178,6 @@ class GameScene: SKScene {
                 }
             }
         }
-        
     }
 }
 

@@ -1,10 +1,11 @@
-//
-//  Police.swift
-//  Road Fighter
-//
-//  Created by YASH SOMPURA on 2018-02-15.
-//  Copyright © 2018 YASH SOMPURA. All rights reserved.
-//
+// File Name: Police.swift
+// Project Name: Road Fighter
+// Advanced iOS Development - Assignment 2
+// Developed By: Yashkumar Sompura (300967186)
+//               Kshitij Suthar (300971837)
+//               Shivam Shah (300877523)
+//               Harsh Mehta (300951815)
+// Github Link: https://github.com/Yash007/RoadFighter
 
 import SpriteKit
 import GameplayKit
@@ -29,13 +30,11 @@ class Police: GameObject {
     
     override func Reset()    {
         self.isHidden = false
-        
         self.position.y = 1000 + self.height!
         let startFrom: CGFloat = CGFloat(self.halfWidth! + 20.0)
         let toFrom: CGFloat = CGFloat(screenWidth! - self.halfWidth! - 20.0)
         let randomX: UInt32 = arc4random_uniform(UInt32(toFrom - startFrom)) + UInt32(startFrom)
         self.position.x = CGFloat(randomX)
-        
     }
     
     override func CheckBounds() {

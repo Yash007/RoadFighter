@@ -1,10 +1,11 @@
-//
-//  GameScene.swift
-//  Road Fighter
-//
-//  Created by YASH SOMPURA on 2018-02-07.
-//  Copyright © 2018 YASH SOMPURA. All rights reserved.
-//
+// File Name: GameTutorial.swift
+// Project Name: Road Fighter
+// Advanced iOS Development - Assignment 2
+// Developed By: Yashkumar Sompura (300967186)
+//               Kshitij Suthar (300971837)
+//               Shivam Shah (300877523)
+//               Harsh Mehta (300951815)
+// Github Link: https://github.com/Yash007/RoadFighter
 
 import SpriteKit
 import GameplayKit
@@ -13,12 +14,9 @@ import AVFoundation
 import CoreMotion
 
 class GameTutorial: SKScene {
-    
-    
     override func didMove(to view: SKView) {
         
     }
-    
     
     func touchDown(atPoint pos : CGPoint) {
         
@@ -32,16 +30,7 @@ class GameTutorial: SKScene {
         
     }
     
-    
-    
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
-        
-        //for t in touches { self.touchDown(atPoint: t.location(in: self)) }
-        
-        //        ScoreManager.Lives = 5
-        //        ScoreManager.Score = 0
-        
-        
         if let view = self.view {
             if let scene = SKScene(fileNamed: "GameStartScene") {
                 scene.scaleMode = .aspectFit
@@ -62,10 +51,8 @@ class GameTutorial: SKScene {
         for t in touches { self.touchUp(atPoint: t.location(in: self)) }
     }
     
-    
     override func update(_ currentTime: TimeInterval) {
-        //self.roadSprite?.Update()
-        
+    
     }
 }
 

@@ -1,10 +1,11 @@
-//
-//  GameScene.swift
-//  Road Fighter
-//
-//  Created by YASH SOMPURA on 2018-02-07.
-//  Copyright © 2018 YASH SOMPURA. All rights reserved.
-//
+// File Name: GameStartScene.swift
+// Project Name: Road Fighter
+// Advanced iOS Development - Assignment 2
+// Developed By: Yashkumar Sompura (300967186)
+//               Kshitij Suthar (300971837)
+//               Shivam Shah (300877523)
+//               Harsh Mehta (300951815)
+// Github Link: https://github.com/Yash007/RoadFighter
 
 import SpriteKit
 import GameplayKit
@@ -14,13 +15,10 @@ import CoreMotion
 
 class GameStartScene: SKScene {
     
-    
     let startButton = SKSpriteNode(imageNamed: "Start")
     let tutorialButton = SKSpriteNode(imageNamed: "Tutorial")
     
-    
     override func didMove(to view: SKView) {
-        
         startButton.position = CGPoint(x: size.width*0.5, y: size.height*0.3)
         startButton.name = "Start"
         startButton.zPosition = 3
@@ -32,9 +30,7 @@ class GameStartScene: SKScene {
         tutorialButton.zPosition = 3
         tutorialButton.size = CGSize(width: startButton.size.width*1.2, height: startButton.size.height*1)
         self.addChild(tutorialButton)
-        
     }
-    
     
     func touchDown(atPoint pos : CGPoint) {
         
@@ -48,19 +44,12 @@ class GameStartScene: SKScene {
         
     }
     
-    
-    
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
-        
-        //        ScoreManager.Lives = 5
-        //        ScoreManager.Score = 0
-        
         if let touch = touches.first{
             let pos = touch.location(in: self)
             let node = self.atPoint(pos)
             
             if node == startButton{
-                
                 if let view = self.view {
                     if let scene = SKScene(fileNamed: "GameScene") {
                         scene.scaleMode = .aspectFit
@@ -70,7 +59,6 @@ class GameStartScene: SKScene {
             }
             
             if node == tutorialButton{
-                
                 if let view = self.view {
                     if let scene = SKScene(fileNamed: "GameTutorial") {
                         scene.scaleMode = .aspectFit
@@ -79,8 +67,6 @@ class GameStartScene: SKScene {
                 }
             }
         }
-        
-        
     }
     
     override func touchesMoved(_ touches: Set<UITouch>, with event: UIEvent?) {
@@ -94,7 +80,6 @@ class GameStartScene: SKScene {
     override func touchesCancelled(_ touches: Set<UITouch>, with event: UIEvent?) {
         for t in touches { self.touchUp(atPoint: t.location(in: self)) }
     }
-    
     
     override func update(_ currentTime: TimeInterval) {
         

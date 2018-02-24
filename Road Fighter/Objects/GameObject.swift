@@ -1,10 +1,11 @@
-//
-//  GameObject.swift
-//  Road Fighter
-//
-//  Created by YASH SOMPURA on 2018-02-07.
-//  Copyright © 2018 YASH SOMPURA. All rights reserved.
-//
+// File Name: GameObject.swift
+// Project Name: Road Fighter
+// Advanced iOS Development - Assignment 2
+// Developed By: Yashkumar Sompura (300967186)
+//               Kshitij Suthar (300971837)
+//               Shivam Shah (300877523)
+//               Harsh Mehta (300951815)
+// Github Link: https://github.com/Yash007/RoadFighter
 
 import SpriteKit
 import GameplayKit
@@ -27,14 +28,14 @@ class GameObject: SKSpriteNode, GameProtocol{
     var randomSource: GKARC4RandomSource?
     var randomDist: GKRandomDistribution?
     
-    
     //Constructors
-    
     init(imageString: String, initialScale: CGFloat)    {
         //Initialize the object with an image
         let texture = SKTexture(imageNamed: imageString)
         let color = UIColor.clear
+        
         super.init(texture: texture, color: color, size: texture.size())
+        
         self.scale = initialScale
         self.setScale(scale!)
         self.width = texture.size().width * self.scale!
@@ -67,6 +68,4 @@ class GameObject: SKSpriteNode, GameProtocol{
     func Update() {
         
     }
-    
-
 }

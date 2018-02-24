@@ -1,10 +1,11 @@
-//
-//  Collisionmanager.swift
-//  Road Fighter
-//
-//  Created by Kshitij Suthar on 2018-02-19.
-//  Copyright © 2018 YASH SOMPURA. All rights reserved.
-//
+// File Name: Collisionmanager.swift
+// Project Name: Road Fighter
+// Advanced iOS Development - Assignment 2
+// Developed By: Yashkumar Sompura (300967186)
+//               Kshitij Suthar (300971837)
+//               Shivam Shah (300877523)
+//               Harsh Mehta (300951815)
+// Github Link: https://github.com/Yash007/RoadFighter
 
 import CoreGraphics
 import SpriteKit
@@ -20,13 +21,9 @@ class Collisionmanager: SKScene, SKPhysicsContactDelegate {
     }
 
     public static func CheckCollison(scene: SKScene, object1: GameObject, object2: GameObject) {
-        
-        
         if (CGPoint.Distance(P1: object1.position, P2: object2.position) < object1.halfHeight! + 30 + object2.halfWidth! - 35) {
-            
             if(!object2.isColliding!) {
                 if(object2.name == "Police") {
-                    
                     let animateMove = SKAction.moveTo(x: object1.position.x, duration: 0.1)
                     object1.run(animateMove)
                     let particle = SKEmitterNode(fileNamed: "Explosion.sks")!
@@ -40,7 +37,6 @@ class Collisionmanager: SKScene, SKPhysicsContactDelegate {
                 }
                 
                 if(object2.name == "viper" || object2.name == "truck" || object2.name == "car" || object2.name == "mini_van" || object2.name == "mini-truck" || object2.name == "taxi") {
-                    
                     
                     var setpos: CGFloat = 0
                     var newpos: CGFloat = 0
@@ -72,15 +68,11 @@ class Collisionmanager: SKScene, SKPhysicsContactDelegate {
                 
                 object2.isColliding = true
             }
-            
         }
-            
         else {
             object2.isColliding = false
         }
-        
     }
-    
 }
 
 
